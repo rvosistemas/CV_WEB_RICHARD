@@ -35,3 +35,59 @@ function skills_effect() {
         document.getElementById("python").classList.add("bar-progress_python");
     }
 }
+
+// -------------------- INCLUDE OTHERS HTML FILES --------------------
+fetch("/src/html/start.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#start").innerHTML = data;
+    });
+
+fetch("/src/html/about_me.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#about_me").innerHTML = data;
+    });
+
+fetch("/src/html/services.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#services").innerHTML = data;
+    });
+
+fetch("/src/html/skills.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#skills").innerHTML = data;
+    });
+
+fetch("/src/html/portfolio.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#portfolio").innerHTML = data;
+    });
+
+fetch("/src/html/contact.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("#contact").innerHTML = data;
+    });
+fetch("/src/html/footer.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("footer").innerHTML = data;
+    });
