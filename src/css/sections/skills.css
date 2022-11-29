@@ -1,0 +1,92 @@
+.container-skills {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("/src/img/fondo-habilidades.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container-skills .skill {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.container-skills .skill .info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.container-skills .skill .list {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.container-skills .skill .bar {
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+:root {
+    --percentage_html_css: 95%;
+    --percentage_js: 65%;
+    --percentage_python: 80%;
+}
+
+.container-skills .skill .bar .bar-progress_html_css {
+    background-color: #fff;
+    width: var(--percentage_html_css);
+    height: 6px;
+    animation: progress_html_css 2s forwards;
+}
+
+.container-skills .skill .bar .bar-progress_js {
+    background-color: #fff;
+    width: var(--percentage_js);
+    height: 6px;
+    animation: progress_js 2s forwards;
+}
+
+.container-skills .skill .bar .bar-progress_python {
+    background-color: #fff;
+    width: var(--percentage_python);
+    height: 6px;
+    animation: progress_python 2s forwards;
+}
+
+@keyframes progress_html_css {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--percentage_html_css);
+    }
+}
+
+@keyframes progress_js {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--percentage_js);
+    }
+}
+
+@keyframes progress_python {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--percentage_python);
+    }
+}

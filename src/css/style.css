@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import '/src/css/sections/start.css';
+@import '/src/css/sections/about_me.css';
+@import '/src/css/sections/services.css';
+@import '/src/css/sections/skills.css';
+@import '/src/css/sections/portfolio.css';
+@import '/src/css/sections/contact.css';
+@import '/src/css/sections/footer.css';
+@import '/src/css/sections/responsive.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}

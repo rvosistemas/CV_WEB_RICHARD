@@ -1,0 +1,74 @@
+#about_me {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#about_me .container-photo {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#about_me .container-photo img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#about_me .about_me {
+    margin: 0 40px;
+}
+
+#about_me .about_me .title-section {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#about_me .about_me h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#about_me .about_me h2 span {
+    color: #ff5080;
+}
+
+#about_me .about_me h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#about_me .about_me p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#about_me .about_me a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#about_me .about_me a:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
