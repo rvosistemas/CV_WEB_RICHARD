@@ -2,16 +2,18 @@
 <div class="container-form">
     <form action="">
         <div class="row half">
-            <input type="text" placeholder="Full name" class="input-half">
-            <input type="text" placeholder="Email" class="input-half">
+            <input type="text" name="full_name" id="full_name" placeholder="Full name" class="input-half" required>
+            <input type="text" name="email" id="email" placeholder="Email" class="input-half"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
         </div>
 
         <div class="row">
-            <input type="text" placeholder="Topic..." class="input-full">
+            <input type="text" name="topic" id="topic" placeholder="Topic..." class="input-full" required>
         </div>
 
         <div class="row">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message ..." class="input-full"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message ..." class="input-full"
+                required></textarea>
         </div>
 
         <!-- <input type="submit" value="Send message" class="btn-send"> -->

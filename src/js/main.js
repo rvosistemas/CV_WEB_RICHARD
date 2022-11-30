@@ -15,7 +15,6 @@ function select(link) {
 // function that shows responsive menu
 function responsiveMenu() {
     var x = document.getElementById("nav");
-    console.log("var x -->  ", x)
     if (x.className === "") {
         x.className = "responsive";
     } else {
