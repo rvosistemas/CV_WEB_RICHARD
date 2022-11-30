@@ -1,8 +1,20 @@
+/*
+    --bg-color: rgba(0, 0, 0, 0.7);
+    --primary-color: #ff5080;
+    --secondary-color: #fff;
+    --black-color: #000;
+    --dark-blue: #111135;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+*/
+
 #about_me {
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
-    color: #111135;
+    color: var(--dark-blue);
     display: flex;
 }
 
@@ -15,7 +27,7 @@
     padding: 20px;
     width: 100%;
     border-radius: 20px;
-    background-color: #f3f3f3;
+    background-color: var(--white-gray);
 }
 
 #about_me .about_me {
@@ -25,9 +37,9 @@
 #about_me .about_me .title-section {
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: var(--dark-blue);
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: var(--gray);
     text-decoration-thickness: 5px;
 }
 
@@ -39,7 +51,7 @@
 }
 
 #about_me .about_me h2 span {
-    color: #ff5080;
+    color: var(--primary-color);
 }
 
 #about_me .about_me h3 {
@@ -53,22 +65,22 @@
 #about_me .about_me p {
     font-size: 14px;
     line-height: 25px;
-    color: #565656;
+    color: var(--dark-gray);
     margin-bottom: 12px;
 }
 
 #about_me .about_me a {
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: var(--black-color);
     border-radius: 30px;
     padding: 10px 20px;
-    border: 1px solid #000;
+    border: 1px solid var(--black-color);
     margin-top: 30px;
     transition: .5s;
 }
 
 #about_me .about_me a:hover {
-    background-color: #ff5080;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }

@@ -2,20 +2,37 @@
     <header>
         <div class="content-header">
             <h1>/RVO/</h1>
+            <span class="en" data-section="start" data-value="en">English</span>
+            <input type="checkbox" class="check" id="check" onclick="change_language()">
+            <span class="es" data-section="start" data-value="es">Spanish</span>
             <nav id="nav" class="">
                 <ul id="links">
-                    <li><a href="#start" class="selected" onclick="select(this)">INICIO</a></li>
-                    <li><a href="#about_me" onclick="select(this)">SOBRE MI</a></li>
-                    <li><a href="#services" onclick="select(this)">SERVICIOS</a></li>
-                    <li><a href="#portfolio" onclick="select(this)">PORTAFOLIO</a></li>
-                    <li><a href="#contact" onclick="select(this)">CONTACTO</a></li>
+                    <li>
+                        <a href="#start" class="selected" onclick="select(this)" data-section="start"
+                            data-value="start">INTRODUCTION</a>
+                    </li>
+                    <li>
+                        <a href="#about_me" onclick="select(this)" data-section="start" data-value="about_me">ABOUT
+                            ME</a>
+                    </li>
+                    <li>
+                        <a href="#services" onclick="select(this)" data-section="start"
+                            data-value="services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" onclick="select(this)" data-section="start"
+                            data-value="portfolio">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="select(this)" data-section="start" data-value="contact">CONTACT</a>
+                    </li>
                 </ul>
             </nav>
-            <!-- iconos del menu responsive -->
+            <!-- responsive menu icons -->
             <div id="icon-nav" onclick="responsiveMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- iconos del redes sociales -->
+            <!-- social media icons -->
             <div class="networks">
                 <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
                 <!-- <a href="#"></a><i class="fa-brands fa-instagram-square"></i></a> -->
@@ -24,11 +41,13 @@
         </div>
     </header>
     <div class="presentation">
-        <p class="welcome">Bienvenidos</p>
-        <h2>Soy <span>Richard Vivas Ordoñez</span>, Desarrollador de software</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita
-            debitis laboriosam corporis dolore facere omnis placeat similique hic quod modi, quia accusantium
-            facilis consequuntur harum consectetur recusandae voluptatem dolores?</p>
-        <a href="#portfolio">Ir a Portafolio</a>
+        <p class="welcome" data-section="start" data-value="welcome">Welcome</p>
+        <h2 data-section="start" data-value="hi">Hi, my name is:</h2>
+        <h1>Richard Vivas Ordoñez</h1>
+        <h3 data-section="start" data-value="sd">I am a Software Developer</h3>
+        <br>
+        <p data-section="start" data-value="hope">I hope this page is to your liking and you can learn more about me and
+            my work.</p>
+        <a href="#portfolio" data-section="start" data-value="goto">Go to portfolio</a>
     </div>
 </div>

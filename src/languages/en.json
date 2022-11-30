@@ -1,0 +1,43 @@
+{
+    "index": {
+        "title": "RVO Software Development"
+    },
+    "start":{
+        "en": "English",
+        "es": "Spanish",
+        "start": "INTRODUCTION",
+        "about_me": "ABOUT ME",
+        "services": "SERVICES",
+        "portfolio": "PORTFOLIO",
+        "contact": "CONTACT",
+        "welcome": "Welcome",
+        "hi": "Hi, my name is:",
+        "sd": "I am a Software Developer",
+        "hope": "I hope this page is to your liking and you can learn more about me and my work.",
+        "goto": "Go to portfolio"
+    },
+    "about_me":{
+        "about_me": "About me",
+        "hi": "Hi, my name is Richard Vivas Ordoñez",
+        "sd": "I am a Software Developer",
+        "description": "I have been working in the world of web development for more than 3 years as a backend mostly in python, although I have knowledge in java, php and javascript (also starting in the fronted world). I have worked with startups such as Knowark, LQN, Mensajeros Urbanos, creating solutions and supporting their technological products and services. For this reason I make available my knowledge, skills, discipline and my desire to continue learning to achieve great goals together.",
+        "quote": "Well done is better than well said. ",
+        "download": "Download CV"
+    },
+    "services":{
+        "title": "MY SERVICES"
+    },
+    "skills":{
+        "title": "SKILLS"
+    },
+    "portfolio":{
+        "title": "MY PROJECTS"
+    },
+    "contact":{
+        "title": "Contact me",
+        "bt": "Send message"
+    },
+    "footer":{
+        "title": "All rights reserved - 2022"
+    }   
+}
