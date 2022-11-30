@@ -1,4 +1,5 @@
 
+// -------------------- MAIN FUNCTIONS --------------------
 // function that applies the style to the selected option in the menu and removes the previously selected one
 function select(link) {
     var option = document.querySelectorAll("#links a");
@@ -14,6 +15,7 @@ function select(link) {
 // function that shows responsive menu
 function responsiveMenu() {
     var x = document.getElementById("nav");
+    console.log("var x -->  ", x)
     if (x.className === "") {
         x.className = "responsive";
     } else {
@@ -35,61 +37,3 @@ function skills_effect() {
         document.getElementById("python").classList.add("bar-progress_python");
     }
 }
-
-// -------------------- INCLUDE OTHERS HTML FILES --------------------
-// --- start --- 
-fetch("/src/html/start.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#start").innerHTML = data;
-    });
-// --- about_me --- 
-fetch("/src/html/about_me.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#about_me").innerHTML = data;
-    });
-// --- services --- 
-fetch("/src/html/services.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#services").innerHTML = data;
-    });
-// --- skills --- 
-fetch("/src/html/skills.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#skills").innerHTML = data;
-    });
-// --- portfolio --- 
-fetch("/src/html/portfolio.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#portfolio").innerHTML = data;
-    });
-// --- contact --- 
-fetch("/src/html/contact.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#contact").innerHTML = data;
-    });
-// --- footer --- 
-fetch("/src/html/footer.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("footer").innerHTML = data;
-    });

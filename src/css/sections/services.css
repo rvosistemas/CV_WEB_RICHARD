@@ -1,15 +1,27 @@
+/*
+    --bg-color: rgba(0, 0, 0, 0.7);
+    --primary-color: #ff5080;
+    --secondary-color: #fff;
+    --black-color: #000;
+    --dark-blue: #111135;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+*/
+
 #services {
     padding: 100px 15px;
     text-align: center;
-    background-color: #f3f3f3;
+    background-color: var(--white-gray);
 }
 
 #services .title-section {
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: var(--dark-blue);
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: var(--light-gray);
     text-decoration-thickness: 5px;
 }
 
@@ -22,7 +34,8 @@
 
 #services .row .service {
     max-width: 350px;
-    background-color: #fff;
+    background-color: var(--secondary-color);
+    ;
     padding: 30px;
     margin: 0 5px;
     border-radius: 5px;
@@ -30,7 +43,7 @@
 }
 
 #services .row .service:hover {
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+    box-shadow: 5px 5px 10px var(--dark-gray), -5px -5px 10px var(--gray);
 }
 
 #services .row .service h4 {
@@ -43,7 +56,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #d3d3d3;
+    background-color: var(--light-gray);
     padding: 20px;
     margin-bottom: 25px;
 }
@@ -51,7 +64,7 @@
 #services .row .service hr {
     width: 30%;
     margin: auto;
-    color: #000;
+    color: var(--black-color);
     margin-bottom: 25px;
 }
 

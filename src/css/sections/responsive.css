@@ -1,3 +1,15 @@
+/*
+    --bg-color: rgba(0, 0, 0, 0.7);
+    --primary-color: #ff5080;
+    --secondary-color: #fff;
+    --black-color: #000;
+    --dark-blue: #111135;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+*/
+
 @media screen and (max-width:800px) {
     .networks {
         display: none;
@@ -9,7 +21,7 @@
 
     nav.responsive {
         display: block;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: var(--bg-color);
         width: 100%;
         position: absolute;
         top: 48px;

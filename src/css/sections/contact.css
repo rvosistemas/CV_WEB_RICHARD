@@ -1,3 +1,15 @@
+/*
+    --bg-color: rgba(0, 0, 0, 0.7);
+    --primary-color: #ff5080;
+    --secondary-color: #fff;
+    --black-color: #000;
+    --dark-blue: #111135;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+*/
+
 #contact {
     padding: 100px 15px;
 }
@@ -7,9 +19,9 @@
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: var(--dark-blue);
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: var(--light-gray);
     text-decoration-thickness: 5px;
 }
 
@@ -32,7 +44,7 @@
     padding: 20px;
     border-radius: 20px;
     border: none;
-    border: 1px solid #919191;
+    border: 1px solid var(--gray);
 }
 
 #contact .container-form .half input {
@@ -49,11 +61,14 @@
     cursor: pointer;
     transition: .5s;
     padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid var(--gray);
     font-size: 18px;
     font-weight: bold;
 }
 
 #contact .btn-send:hover {
-    background-color: #ff5080;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
