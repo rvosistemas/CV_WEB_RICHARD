@@ -15,7 +15,6 @@ function select(link) {
 // function that shows responsive menu
 function responsiveMenu() {
     var x = document.getElementById("nav");
-    console.log("var x -->  ", x)
     if (x.className === "") {
         x.className = "responsive";
     } else {
@@ -36,4 +35,18 @@ function skills_effect() {
         document.getElementById("js").classList.add("bar-progress_js");
         document.getElementById("python").classList.add("bar-progress_python");
     }
+}
+
+// send message
+function send_message() {
+    const form = document.querySelector('#form');
+    form.addEventListener('submit', handleSubmit);
+}
+
+function handleSubmit(event) {
+    const buttonMailTo = document.querySelector('#rvo_email');
+    event.preventDefault();
+    const form = new FormData(this);
+    buttonMailTo.setAttribute('href', `mailto:rvosistemas@outlook.com?subject=nombre: ${form.get('full_name')} email: ${form.get('email')}&body=${form.get('message')}`);
+    buttonMailTo.click();
 }
