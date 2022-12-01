@@ -36,3 +36,17 @@ function skills_effect() {
         document.getElementById("python").classList.add("bar-progress_python");
     }
 }
+
+// send message
+function send_message() {
+    const form = document.querySelector('#form');
+    form.addEventListener('submit', handleSubmit);
+}
+
+function handleSubmit(event) {
+    const buttonMailTo = document.querySelector('#rvo_email');
+    event.preventDefault();
+    const form = new FormData(this);
+    buttonMailTo.setAttribute('href', `mailto:rvosistemas@outlook.com?subject=nombre: ${form.get('full_name')} email: ${form.get('email')}&body=${form.get('message')}`);
+    buttonMailTo.click();
+}

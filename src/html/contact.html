@@ -1,6 +1,6 @@
 <h3 class="title-section" data-section="contact" data-value="title">Contact me</h3>
 <div class="container-form">
-    <form action="">
+    <form id="form" action="">
         <div class="row half">
             <input type="text" name="full_name" id="full_name" placeholder="Full name" class="input-half" required>
             <input type="text" name="email" id="email" placeholder="Email" class="input-half"
@@ -17,6 +17,8 @@
         </div>
 
         <!-- <input type="submit" value="Send message" class="btn-send"> -->
-        <button type='submit' class="btn-send" data-section="contact" data-value="bt">Send message</button>
+        <button type='submit' class="btn-send" data-section="contact" data-value="bt" onclick="send_message()">Send
+            message</button>
     </form>
+    <a href="mailto:rvosistemas@outlook.com" id="rvo_email"></a>
 </div>
