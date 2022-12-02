@@ -9,7 +9,7 @@
     --dark-gray: #565656;
 */
 
-@media screen and (min-width:481px) and (max-width:768px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
 
     /* start section */
     nav {
@@ -124,11 +124,13 @@
     }
 
     #services .row {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 15px;
     }
 
     #services .row .service {
-        margin: 10px auto;
+        margin: 30px 5px;
     }
 
     /* skills section */

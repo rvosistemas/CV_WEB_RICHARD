@@ -9,6 +9,7 @@
 /* --------- RESPONSIVE ------------  */
 @import '/src/css/responsive/width320to480.css';
 @import '/src/css/responsive/width481to768.css';
+@import '/src/css/responsive/width769to1024.css';
 
 :root {
     --primary-color: #ff5080;
