@@ -1,9 +1,8 @@
 /*
-    --bg-color: rgba(0, 0, 0, 0.7);
     --primary-color: #ff5080;
-    --secondary-color: #fff;
+    --secondary-color: #f3f3f3;
+    --tertiary-color: #000;
     --black-color: #000;
-    --dark-blue: #111135;
     --white-gray: #f3f3f3;
     --light-gray: #d3d3d3;
     --gray: #919191;
@@ -11,14 +10,13 @@
 */
 
 #start {
-    background: linear-gradient(var(--bg-color), var(--bg-color)), url("/src/img/background-start.jpg");
+    background-image: url("/src/img/background-start.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
 }
 
 #start .content header {
-    background-color: var(--bg-color);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -41,18 +39,23 @@
 
 #start .content header .content-header .en {
     text-align: center;
-    color: var(--primary-color);
-    font-size: 9px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 #start .content header .content-header .es {
     text-align: center;
-    color: var(--secondary-color);
-    font-size: 9px;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #start .content header .content-header .check {
     position: relative;
+    font-size: 12px;
     width: 50px;
 }
 
@@ -78,12 +81,22 @@
 }
 
 #start .content header .content-header .check:checked:before {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+
 }
 
 #start .content header .content-header .check:checked:after {
     left: 25px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+
+}
+
+#start .content header .content-header .mode {
+    position: relative;
+    color: var(--secondary-color);
+    width: 50px;
+    margin-left: 20px;
 }
 
 #start .content header .content-header nav ul {
@@ -94,8 +107,9 @@
 
 #start .content header .content-header nav ul li a {
     text-decoration: none;
-    color: var(--secondary-color);
     margin: 0 12px;
+    color: var(--secondary-color);
+    font-size: 12px;
     font-weight: 400;
     transition: .5s;
 }
@@ -106,8 +120,9 @@
 
 #start .content header .content-header .networks a {
     text-decoration: none;
-    color: var(--secondary-color);
     display: inline-block;
+    color: var(--secondary-color);
+
     margin-left: 10px;
     transition: .5s;
 }
@@ -124,7 +139,6 @@
     max-width: 1100px;
     height: 100vh;
     margin: auto;
-    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: center;

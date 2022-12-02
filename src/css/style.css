@@ -9,11 +9,10 @@
 @import '/src/css/sections/responsive.css';
 
 :root {
-    --bg-color: rgba(0, 0, 0, 0.7);
     --primary-color: #ff5080;
-    --secondary-color: #fff;
+    --secondary-color: #f3f3f3;
+    --tertiary-color: #000;
     --black-color: #000;
-    --dark-blue: #111135;
     --white-gray: #f3f3f3;
     --light-gray: #d3d3d3;
     --gray: #919191;
@@ -32,4 +31,18 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(5, 1, 71);
+    background: linear-gradient(90deg, rgb(50, 50, 50) 0%, rgba(25, 25, 25, 1) 17%, rgba(0, 0, 0, 1) 100%);
+    color: #f3f3f3;
+}
+
+
+
+.light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(231, 231, 231) 17%, rgb(201, 201, 201) 100%);
+    color: #000;
 }

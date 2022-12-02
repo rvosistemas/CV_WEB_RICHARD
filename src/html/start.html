@@ -2,10 +2,16 @@
     <header>
         <div class="content-header">
             <h1>/RVO/</h1>
-            <span class="en" data-section="start" data-value="en">English</span>
-            <input type="checkbox" class="check" id="check" onclick="change_language()">
-            <span class="es" data-section="start" data-value="es">Spanish</span>
-            <nav id="nav" class="">
+            <div>
+                <span class="en">ENG</span>
+                <input type="checkbox" class="check" id="check" onclick="change_language()">
+                <span class="es">ESP</span>
+                <a class="mode" onclick="changeMode(this)" id="mode">
+                    <span>|| Light</span>
+                    <i class="fa-solid fa-sun"></i>
+                </a>
+            </div>
+            <nav id="nav" class="nav">
                 <ul id="links">
                     <li>
                         <a href="#start" class="selected" onclick="select(this)" data-section="start"
@@ -18,6 +24,9 @@
                     <li>
                         <a href="#services" onclick="select(this)" data-section="start"
                             data-value="services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#skills" onclick="select(this)" data-section="start" data-value="services">SKILLS</a>
                     </li>
                     <li>
                         <a href="#portfolio" onclick="select(this)" data-section="start"
@@ -34,15 +43,15 @@
             </div>
             <!-- social media icons -->
             <div class="networks">
-                <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-                <!-- <a href="#"></a><i class="fa-brands fa-instagram-square"></i></a> -->
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"></a><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </header>
     <div class="presentation">
         <h1>Richard Vivas Ordoñez</h1>
-        <h3 data-section="start" data-value="sd">Software Developer</h3>
+        <h2 data-section="start" data-value="sd">Software Developer</h2>
         <br>
         <p class="welcome" data-section="start" data-value="welcome">Welcome</p>
         <p data-section="start" data-value="hope">I hope this page is to your liking and you can learn more about me and
