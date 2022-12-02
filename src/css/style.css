@@ -6,7 +6,8 @@
 @import '/src/css/sections/portfolio.css';
 @import '/src/css/sections/contact.css';
 @import '/src/css/sections/footer.css';
-@import '/src/css/sections/responsive.css';
+/* --------- RESPONSIVE ------------  */
+@import '/src/css/responsive/width360to640.css';
 
 :root {
     --primary-color: #ff5080;

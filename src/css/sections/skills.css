@@ -19,6 +19,13 @@
     color: var(--secondary-color);
 }
 
+.container-skills h3 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-decoration-thickness: 5px;
+}
+
 .container-skills .skills-cols {
     display: flex;
     justify-content: space-between;

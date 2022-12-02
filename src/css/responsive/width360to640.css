@@ -9,13 +9,39 @@
     --dark-gray: #565656;
 */
 
-@media screen and (max-width:800px) {
-    .networks {
+@media screen and (min-width:360px) and (max-width:640px) {
+
+    /* start section */
+    nav {
         display: none;
     }
 
-    nav {
-        display: none;
+    #start .content header .content-header .en {
+        font-size: 10px;
+    }
+
+    #start .content header .content-header .es {
+        font-size: 10px;
+    }
+
+    #start .content header .content-header .mode {
+        margin-left: 9px;
+        font-size: 12px;
+    }
+
+    #start .content header .content-header .check {
+        position: relative;
+        width: 40px;
+    }
+
+    #start .content header .content-header .check:before {
+        width: 40px;
+        height: 20px;
+    }
+
+    #start .content header .content-header .check:after {
+        width: 20px;
+        height: 20px;
     }
 
     nav.responsive {
@@ -41,9 +67,23 @@
         display: block;
     }
 
-    #start .content .presentation h2 {
+    #start .content .presentation h1 {
         font-size: 40px;
+        text-align: center;
     }
+
+    #start .content .presentation h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #start .content .presentation .description {
+        margin: 20px 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* about me section */
 
     #about_me {
         padding: 50px 0;
@@ -63,10 +103,21 @@
         text-align: center;
     }
 
-    #about_me .about_me h2 {
+    #about_me h2, h3 {
         font-size: 25px;
         text-align: center;
     }
+
+    #about_me #about_hi {
+        text-align: center;
+    }
+
+    #about_me #download {
+        margin: 30px 25%;
+        text-align: center;
+    }
+
+    /* services section */
 
     #services {
         padding: 50px 15px;
@@ -80,9 +131,21 @@
         margin: 10px auto;
     }
 
+    /* skills section */
+
     .container-skills {
         padding: 50px 20px;
     }
+
+    .container-skills h3 {
+        padding: 20px;
+    }
+
+    .container-skills .skills-cols {
+        display: contents;
+    }
+
+    /* portfolio section */
 
     #portfolio {
         padding: 50px 0;
@@ -95,6 +158,8 @@
     #portfolio .row .project {
         margin: 10px auto;
     }
+
+    /* contact section */
 
     #contact {
         padding: 50px 15px;
@@ -109,4 +174,12 @@
         width: 100%;
         margin-bottom: 15px;
     }
+
+    /* footer section */
+
+    .networks {
+        display: none;
+    }
+
+
 }
