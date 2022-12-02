@@ -2,23 +2,27 @@
 <div class="container-form">
     <form id="form" action="">
         <div class="row half">
-            <input type="text" name="full_name" id="full_name" placeholder="Full name" class="input-half" required>
-            <input type="text" name="email" id="email" placeholder="Email" class="input-half"
+            <label for="full_name" data-section="contact" data-value="full_name">Name:</label>
+            <input type="text" name="full_name" id="full_name" placeholder="..." class="input-half" required>
+            <label for="email" data-section="contact" data-value="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="..." class="input-half"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
         </div>
 
         <div class="row">
-            <input type="text" name="topic" id="topic" placeholder="Topic..." class="input-full" required>
+            <label for="topic" data-section="contact" data-value="topic">Topic:</label>
+            <input type="text" name="topic" id="topic" placeholder="..." class="input-full" required>
         </div>
 
         <div class="row">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message ..." class="input-full"
-                required></textarea>
+            <label for="message" data-section="contact" data-value="message">Your message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="..." class="input-full" required>
+            </textarea>
         </div>
 
-        <!-- <input type="submit" value="Send message" class="btn-send"> -->
-        <button type='submit' class="btn-send" data-section="contact" data-value="bt" onclick="send_message()">Send
-            message</button>
+        <button type='submit' class="btn-send" data-section="contact" data-value="bt" onclick="send_message()">
+            Send message
+        </button>
     </form>
     <a href="mailto:rvosistemas@outlook.com" id="rvo_email"></a>
 </div>

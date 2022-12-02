@@ -1,9 +1,8 @@
 /*
-    --bg-color: rgba(0, 0, 0, 0.7);
     --primary-color: #ff5080;
-    --secondary-color: #fff;
+    --secondary-color: #f3f3f3;
+    --tertiary-color: #000;
     --black-color: #000;
-    --dark-blue: #111135;
     --white-gray: #f3f3f3;
     --light-gray: #d3d3d3;
     --gray: #919191;
@@ -11,7 +10,7 @@
 */
 
 footer {
-    background-color: var(--black-color);
+    background-color: var(--tertiary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 30px 0;

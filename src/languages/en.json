@@ -3,8 +3,6 @@
         "title": "RVO Software Development"
     },
     "start":{
-        "en": "English",
-        "es": "Spanish",
         "start": "INTRODUCTION",
         "about_me": "ABOUT ME",
         "services": "SERVICES",
@@ -34,6 +32,10 @@
     },
     "contact":{
         "title": "Contact me",
+        "full_name": "Name:",
+        "email": "Email:",
+        "topic": "Topic:",
+        "message": "Message:",
         "bt": "Send message"
     },
     "footer":{

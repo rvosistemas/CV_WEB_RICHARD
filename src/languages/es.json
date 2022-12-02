@@ -3,8 +3,6 @@
         "title": "RVO Desarrollador Software"
     },
     "start":{
-        "en": "Inglés",
-        "es": "Español",
         "start": "INTRODUCCIÓN",
         "about_me": "SOBRE MÍ",
         "services": "SERVICIOS",
@@ -34,6 +32,10 @@
     },
     "contact":{
         "title": "Contáctame",
+        "full_name": "Nombre:",
+        "email": "Correo:",
+        "topic": "Asunto:",
+        "message": "Mensaje:",
         "bt": "Enviar mensaje"
     },
     "footer":{
