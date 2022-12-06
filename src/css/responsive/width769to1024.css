@@ -113,8 +113,10 @@
     }
 
     #about_me #download {
-        margin: 30px 40%;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        margin: 0 25%;
     }
 
     /* services section */
@@ -196,8 +198,8 @@
         }
 
         #about_me #download {
-            margin: 100px 40%;
-            text-align: center;
+            margin: 0 40%;
+
         }
     }
 

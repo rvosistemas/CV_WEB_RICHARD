@@ -114,7 +114,8 @@
     }
 
     #about_me #download {
-        margin: 30px 30%;
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
 
@@ -195,8 +196,7 @@
         }
 
         #about_me #download {
-            margin: 20px 40%;
-            text-align: center;
+            margin: 0 30%;
         }
     }
 
