@@ -1,0 +1,62 @@
+<div class="content">
+    <header>
+        <div class="content-header">
+            <h1>/RVO/</h1>
+            <div>
+                <span class="en">ENG</span>
+                <input type="checkbox" class="check" id="check" onclick="change_language()">
+                <span class="es">ESP</span>
+                <a class="mode" onclick="changeMode(this)" id="mode">
+                    <span>|| Light</span>
+                    <i class="fa-solid fa-sun"></i>
+                </a>
+            </div>
+            <nav id="nav" class="nav">
+                <ul id="links">
+                    <li>
+                        <a href="#start" class="selected" onclick="select(this)" data-section="start"
+                            data-value="start">INTRODUCTION</a>
+                    </li>
+                    <li>
+                        <a href="#about_me" onclick="select(this)" data-section="start" data-value="about_me">ABOUT
+                            ME</a>
+                    </li>
+                    <li>
+                        <a href="#services" onclick="select(this)" data-section="start"
+                            data-value="services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#skills" onclick="select(this)" data-section="start" data-value="skills">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" onclick="select(this)" data-section="start"
+                            data-value="portfolio">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="select(this)" data-section="start" data-value="contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- responsive menu icons -->
+            <div id="icon-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- social media icons -->
+            <div class="networks">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"></a><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="presentation">
+        <h1>Richard Vivas Ordoñez</h1>
+        <h2 data-section="start" data-value="sd">Software Developer</h2>
+        <br>
+        <p class="welcome" data-section="start" data-value="welcome">Welcome</p>
+        <p class="description" data-section="start" data-value="hope">
+            I hope this page is to your liking and you can learn more about me and my work.
+        </p>
+        <a href="#portfolio" data-section="start" data-value="goto">Go to portfolio</a>
+    </div>
+</div>

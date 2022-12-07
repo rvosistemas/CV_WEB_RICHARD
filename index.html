@@ -1,301 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./src/img/photo-richard.png">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>RVO Desarrollo de software</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title data-section="index" data-value="title">RVO Software Development</title>
 </head>
 
 <body>
-    <!-- SECCIÓN DE INICIO -->
-    <section id="start">
-        <div class="content">
-            <header>
-                <div class="content-header">
-                    <h1>/RVO/</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#start" class="selected" onclick="select(this)">INICIO</a></li>
-                            <li><a href="#about_me" onclick="select(this)">SOBRE MI</a></li>
-                            <li><a href="#services" onclick="select(this)">SERVICIOS</a></li>
-                            <li><a href="#portfolio" onclick="select(this)">PORTAFOLIO</a></li>
-                            <li><a href="#contact" onclick="select(this)">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-                    <!-- iconos del menu responsive -->
-                    <div id="icon-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <!-- iconos del redes sociales -->
-                    <div class="networks">
-                        <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-                        <!-- <a href="#"></a><i class="fa-brands fa-instagram-square"></i></a> -->
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </header>
-            <div class="presentation">
-                <p class="welcome">Bienvenidos</p>
-                <h2>Soy <span>Richard Vivas Ordoñez</span>, Desarrollador de software</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita
-                    debitis laboriosam corporis dolore facere omnis placeat similique hic quod modi, quia accusantium
-                    facilis consequuntur harum consectetur recusandae voluptatem dolores?</p>
-                <a href="#portfolio">Ir a Portafolio</a>
-            </div>
-        </div>
-    </section>
-    <!-- SECCIÓN SOBRE MI -->
-    <section id="about_me">
-        <div class="container-photo">
-            <img src="/src/img/foto-richard.png" alt="">
-        </div>
-        <div class="about_me">
-            <p class="title-section">Sobre Mi</p>
-            <h2>Hola, soy <span>Richard Vivas Ordoñez</span></h2>
-            <h3>Desarrollador de Software</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores nam numquam harum deserunt
-                dolorum, culpa architecto reprehenderit nisi sed quibusdam nesciunt libero delectus aperiam accusamus
-                odio deleniti explicabo mollitia.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href="#">Descargar CV</a>
-        </div>
-    </section>
-    <!-- SECCIÓN SERVICIOS -->
-    <section id="services">
-        <h3 class="title-section">MIS SERVICIOS</h3>
-        <div class="row">
-            <div class="service">
-                <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="services-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>Seo</li>
-                </ul>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum labore distinctio officia
-                    adipisci ea eligendi natus aperiam ipsam aspernatur, deserunt, laboriosam voluptatem! Sed nostrum
-                    eius debitis tempora natus? Molestiae.
-                </p>
-            </div>
-            <div class="service">
-                <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="services-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>Seo</li>
-                </ul>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum labore distinctio officia
-                    adipisci ea eligendi natus aperiam ipsam aspernatur, deserunt, laboriosam voluptatem! Sed nostrum
-                    eius debitis tempora natus? Molestiae.
-                </p>
-            </div>
-            <div class="service">
-                <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="services-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>Seo</li>
-                </ul>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum labore distinctio officia
-                    adipisci ea eligendi natus aperiam ipsam aspernatur, deserunt, laboriosam voluptatem! Sed nostrum
-                    eius debitis tempora natus? Molestiae.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="service">
-                <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="services-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>Seo</li>
-                </ul>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum labore distinctio officia
-                    adipisci ea eligendi natus aperiam ipsam aspernatur, deserunt, laboriosam voluptatem! Sed nostrum
-                    eius debitis tempora natus? Molestiae.
-                </p>
-            </div>
-            <div class="service">
-                <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="services-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>Seo</li>
-                </ul>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum labore distinctio officia
-                    adipisci ea eligendi natus aperiam ipsam aspernatur, deserunt, laboriosam voluptatem! Sed nostrum
-                    eius debitis tempora natus? Molestiae.
-                </p>
-            </div>
-            <div class="service">
-                <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="services-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>Seo</li>
-                </ul>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum labore distinctio officia
-                    adipisci ea eligendi natus aperiam ipsam aspernatur, deserunt, laboriosam voluptatem! Sed nostrum
-                    eius debitis tempora natus? Molestiae.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- SECCIÓN HABILIDADES -->
-    <section class="container-skills" id="skills">
-        <h3>HABILIDADES</h3>
+    <!-- START SECTION -->
+    <section id="start" class="start"></section>
 
-        <div class="skill">
-            <div class="info">
-                <p><span class="list"></span>Html & Css</p>
-                <span class="percentage">95%</span>
-            </div>
-            <div class="bar">
-                <div id="html_css" class="bar-progress_html_css"></div>
-            </div>
-        </div>
+    <!-- ABOUT ME SECTION -->
+    <section id="about_me"></section>
 
-        <div class="skill">
-            <div class="info">
-                <p><span class="list"></span>Javascript</p>
-                <span class="percentage">65%</span>
-            </div>
-            <div class="bar">
-                <div id="js" class="bar-progress_js"></div>
-            </div>
-        </div>
+    <!-- SERVICES SECTION -->
+    <section id="services"></section>
 
-        <div class="skill">
-            <div class="info">
-                <p><span class="list"></span>Python</p>
-                <span class="percentage">80%</span>
-            </div>
-            <div class="bar">
-                <div id="python" class="bar-progress_python"></div>
-            </div>
-        </div>
+    <!-- SKILLS SECTION -->
+    <section class="container-skills" id="skills"></section>
 
-    </section>
-    <!-- SECCIÓN PORTAFOLIO -->
-    <section id="portfolio">
-        <h3 class="title-section">MIS PROYECTOS</h3>
-        <div class="row">
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="/src/img/fondo-habilidades.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio"></section>
 
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="/src/img/fondo-habilidades.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
+    <!-- CONTACT SECTION -->
+    <section id="contact"></section>
 
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="/src/img/fondo-habilidades.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="/src/img/fondo-habilidades.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="/src/img/fondo-habilidades.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="/src/img/fondo-habilidades.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contact">
-        <h3 class="title-section">Contactanos ahora</h3>
-        <div class="container-form">
-            <form action="">
-                <div class="row half">
-                    <input type="text" placeholder="Nombre Completo" class="input-half">
-                    <input type="text" placeholder="Dirección de Email" class="input-half">
-                </div>
-
-                <div class="row">
-                    <input type="text" placeholder="Tema..." class="input-full">
-                </div>
-
-                <div class="row">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
-                        class="input-full"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar Mensaje" class="btn-send">
-            </form>
-        </div>
-    </section>
-    <!-- SECTION FOOTER -->
-    <footer>
-        <p>Todos los derechos reservados - 2022</p>
-        <div id="networks">
-            <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
-            <!-- <a href="#"></a><i class="fa-brands fa-instagram-square"></i></a> -->
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </footer>
+    <!-- FOOTER SECTION -->
+    <footer></footer>
 
     <!-- js -->
-    <script src="/src/js/main.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/routes_html.js"></script>
+    <script src="./src/js/languages.js"></script>
+    <script src="./src/js/dark_light_mode.js"></script>
 </body>
 
 </html>

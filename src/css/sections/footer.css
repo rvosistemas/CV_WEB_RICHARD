@@ -1,13 +1,24 @@
+/*
+    --primary-color: #ff5080;
+    --secondary-color: #f3f3f3;
+    --tertiary-color: #000;
+    --black-color: #000;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+*/
+
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 30px 0;
 }
 
 footer a {
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
     display: inline-block;
     margin: 5px;
     font-size: 26px;

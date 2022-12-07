@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
-@import '/src/css/sections/start.css';
-@import '/src/css/sections/about_me.css';
-@import '/src/css/sections/services.css';
-@import '/src/css/sections/skills.css';
-@import '/src/css/sections/portfolio.css';
-@import '/src/css/sections/contact.css';
-@import '/src/css/sections/footer.css';
-@import '/src/css/sections/responsive.css';
+@import './sections/start.css';
+@import './sections/about_me.css';
+@import './sections/services.css';
+@import './sections/skills.css';
+@import './sections/portfolio.css';
+@import './sections/contact.css';
+@import './sections/footer.css';
+@import './sections/footer.css';
+/* --------- RESPONSIVE ------------  */
+@import './responsive/width320to480.css';
+@import './responsive/width481to768.css';
+@import './responsive/width769to1024.css';
+
+:root {
+    --primary-color: #ff5080;
+    --secondary-color: #f3f3f3;
+    --tertiary-color: #000;
+    --black-color: #000;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+    --percentage_html_css: 95%;
+    --percentage_js: 65%;
+    --percentage_python: 80%;
+}
 
 * {
     margin: 0;
@@ -17,4 +35,18 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(5, 1, 71);
+    background: linear-gradient(90deg, rgb(50, 50, 50) 0%, rgba(25, 25, 25, 1) 17%, rgba(0, 0, 0, 1) 100%);
+    color: #f3f3f3;
+}
+
+
+
+.light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(231, 231, 231) 17%, rgb(201, 201, 201) 100%);
+    color: #000;
 }

@@ -1,0 +1,206 @@
+/*
+    --primary-color: #ff5080;
+    --secondary-color: #f3f3f3;
+    --tertiary-color: #000;
+    --black-color: #000;
+    --white-gray: #f3f3f3;
+    --light-gray: #d3d3d3;
+    --gray: #919191;
+    --dark-gray: #565656;
+*/
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    /* start section */
+    nav {
+        display: none;
+    }
+
+    #start .content header .content-header .en {
+        font-size: 10px;
+    }
+
+    #start .content header .content-header .es {
+        font-size: 10px;
+    }
+
+    #start .content header .content-header .mode {
+        margin-left: 9px;
+        font-size: 12px;
+    }
+
+    #start .content header .content-header .check {
+        position: relative;
+        width: 40px;
+    }
+
+    #start .content header .content-header .check:before {
+        width: 40px;
+        height: 20px;
+    }
+
+    #start .content header .content-header .check:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: var(--tertiary-color);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    #icon-nav {
+        display: block;
+    }
+
+    #start .content .presentation h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #start .content .presentation h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #start .content .presentation .description {
+        margin: 20px 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* about me section */
+
+    #about_me {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #about_me .container-photo {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #about_me .container-photo img {
+        padding: 8px;
+    }
+
+    #about_me .about_me .title-section {
+        text-align: center;
+    }
+
+    #about_me h2, h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #about_me #about_hi {
+        text-align: center;
+    }
+
+    #about_me #download {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 25%;
+    }
+
+    /* services section */
+
+    #services {
+        padding: 50px 15px;
+    }
+
+    #services .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 15px;
+    }
+
+    #services .row .service {
+        margin: 30px 5px;
+    }
+
+    /* skills section */
+
+    .container-skills {
+        padding: 50px 20px;
+    }
+
+    .container-skills h3 {
+        padding: 20px;
+    }
+
+    .container-skills .skills-cols {
+        display: contents;
+    }
+
+    /* portfolio section */
+
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    #portfolio .row {
+        display: block;
+    }
+
+    #portfolio .row .project {
+        margin: 10px auto;
+    }
+
+    /* contact section */
+
+    #contact {
+        padding: 50px 15px;
+    }
+
+    #contact .container-form .half {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contact .container-form .half input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* footer section */
+
+    .networks {
+        display: none;
+    }
+
+    /* ------------- LANDSCAPE ------------- */
+    @media screen and (orientation: landscape) {
+        #start .content .presentation h1 {
+            margin-top: 50px;
+            margin-bottom: -5px;
+        }
+
+        #start .content .presentation .welcome {
+            margin: 0px 10px;
+            font-size: 16px;
+        }
+
+        #about_me #download {
+            margin: 0 40%;
+
+        }
+    }
+
+}
