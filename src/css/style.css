@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
-@import '/src/css/sections/start.css';
-@import '/src/css/sections/about_me.css';
-@import '/src/css/sections/services.css';
-@import '/src/css/sections/skills.css';
-@import '/src/css/sections/portfolio.css';
-@import '/src/css/sections/contact.css';
-@import '/src/css/sections/footer.css';
+@import './sections/start.css';
+@import './sections/about_me.css';
+@import './sections/services.css';
+@import './sections/skills.css';
+@import './sections/portfolio.css';
+@import './sections/contact.css';
+@import './sections/footer.css';
+@import './sections/footer.css';
 /* --------- RESPONSIVE ------------  */
-@import '/src/css/responsive/width320to480.css';
-@import '/src/css/responsive/width481to768.css';
-@import '/src/css/responsive/width769to1024.css';
+@import './responsive/width320to480.css';
+@import './responsive/width481to768.css';
+@import './responsive/width769to1024.css';
 
 :root {
     --primary-color: #ff5080;

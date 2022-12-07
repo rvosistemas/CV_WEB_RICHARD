@@ -1,6 +1,6 @@
 // -------------------- INCLUDE OTHERS HTML FILES --------------------
 // --- start --- 
-fetch("/src/html/start.html")
+fetch("../html/start.html")
     .then(response => {
         return response.text()
     })
@@ -8,7 +8,7 @@ fetch("/src/html/start.html")
         document.querySelector("#start").innerHTML = data;
     });
 // --- about_me --- 
-fetch("/src/html/about_me.html")
+fetch("../html/about_me.html")
     .then(response => {
         return response.text()
     })
@@ -16,7 +16,7 @@ fetch("/src/html/about_me.html")
         document.querySelector("#about_me").innerHTML = data;
     });
 // --- services --- 
-fetch("/src/html/services.html")
+fetch("../html/services.html")
     .then(response => {
         return response.text()
     })
@@ -24,7 +24,7 @@ fetch("/src/html/services.html")
         document.querySelector("#services").innerHTML = data;
     });
 // --- skills --- 
-fetch("/src/html/skills.html")
+fetch("../html/skills.html")
     .then(response => {
         return response.text()
     })
@@ -32,7 +32,7 @@ fetch("/src/html/skills.html")
         document.querySelector("#skills").innerHTML = data;
     });
 // --- portfolio --- 
-fetch("/src/html/portfolio.html")
+fetch("../html/portfolio.html")
     .then(response => {
         return response.text()
     })
@@ -40,7 +40,7 @@ fetch("/src/html/portfolio.html")
         document.querySelector("#portfolio").innerHTML = data;
     });
 // --- contact --- 
-fetch("/src/html/contact.html")
+fetch("../html/contact.html")
     .then(response => {
         return response.text()
     })
@@ -48,7 +48,7 @@ fetch("/src/html/contact.html")
         document.querySelector("#contact").innerHTML = data;
     });
 // --- footer --- 
-fetch("/src/html/footer.html")
+fetch("../html/footer.html")
     .then(response => {
         return response.text()
     })

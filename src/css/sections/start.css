@@ -10,7 +10,7 @@
 */
 
 #start {
-    background-image: url("/src/img/background-start.jpg");
+    background-image: url("../../img/background-start.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
