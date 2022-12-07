@@ -16,7 +16,7 @@ fetch("./src/html/about_me.html")
         document.querySelector("#about_me").innerHTML = data;
     });
 // --- services --- 
-fetch("/src/html/services.html")
+fetch("./src/html/services.html")
     .then(response => {
         return response.text()
     })
