@@ -8,7 +8,7 @@ fetch("../html/start.html")
         document.querySelector("#start").innerHTML = data;
     });
 // --- about_me --- 
-fetch("/src/html/about_me.html")
+fetch("./src/html/about_me.html")
     .then(response => {
         return response.text()
     })
