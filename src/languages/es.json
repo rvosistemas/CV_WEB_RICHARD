@@ -6,18 +6,19 @@
         "start": "INTRODUCCIÓN",
         "about_me": "SOBRE MÍ",
         "services": "SERVICIOS",
+        "skills": "HABILIDADES",
         "portfolio": "PORTAFOLIO",
         "contact": "CONTACTO",
         "welcome": "Bienvenidos",
-        "sd": "Soy desarrollador de software",
+        "sd": "Desarrollador de Software",
         "hope": "Espero que esta página sea de tu agrado y puedas conocer más sobre mí y mi trabajo.",
         "goto": "Ir al portafolio"
     },
     "about_me":{
         "about_me": "Sobre mí",
-        "hi": "Hola, mi nombre es Richard Vivas Ordoñez",
+        "hi": "Hola, mi nombre es:",
         "sd": "Desarrollador de software",
-        "description": "Llevo más de 3 años trabajando en el mundo del desarrollo web como backend mayoritariamente en python, aunque tengo conocimientos en java, php y javascript (también comenzando en el mundo fronted). He trabajado con startups como Knowark, LQN, Mensajeros Urbanos, creando soluciones y dando soporte a sus productos y servicios tecnológicos. Por ello pongo a disposición mis conocimientos, habilidades, disciplina y mis ganas de seguir aprendiendo para lograr juntos grandes metas.",
+        "description": "Llevo más de 3 años trabajando en el mundo del desarrollo web como backend, mayoritariamente en python, aunque tengo conocimientos en java, php y javascript (también comenzando en el mundo fronted). He trabajado con startups como Knowark, LQN, Mensajeros Urbanos, creando soluciones y dando soporte a sus productos y servicios tecnológicos. Por ello pongo a disposición mis conocimientos, habilidades, disciplina y mis ganas de seguir aprendiendo para lograr juntos grandes metas.",
         "quote": "Bien hecho es mejor que bien dicho. ",
         "download": "Descargar CV"
     },

@@ -1,10 +1,10 @@
 // -------------------- CHOOSE LANGUAGES --------------------
 
 const language = async (id, texts_to_change) => {
-    var request_json = await fetch('/src/languages/en.json');
+    var request_json = await fetch('../languages/en.json');
     document.querySelector('html').setAttribute('lang', 'en');
     if (id) {
-        request_json = await fetch('/src/languages/es.json');
+        request_json = await fetch('../languages/es.json');
         document.querySelector('html').setAttribute('lang', 'es');
     }
     const texts = await request_json.json();
