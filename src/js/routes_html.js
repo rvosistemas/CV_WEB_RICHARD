@@ -1,6 +1,7 @@
 // -------------------- INCLUDE OTHERS HTML FILES --------------------
 // --- start --- 
-fetch("../html/start.html")
+// fetch("../html/start.html")
+fetch("/src/html/start.html")
     .then(response => {
         return response.text()
     })
