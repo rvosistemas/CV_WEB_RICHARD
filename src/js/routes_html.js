@@ -1,8 +1,3 @@
-// Add CSP meta tag that will block cross-origin AJAX
-var cspMetaTag = document.createElement('meta');
-cspMetaTag.setAttribute('http-equiv', 'Content-Security-Policy');
-cspMetaTag.setAttribute('content', "connect-src 'self';");
-document.querySelector('head').appendChild(cspMetaTag);
 // -------------------- INCLUDE OTHERS HTML FILES --------------------
 // --- start --- 
 // fetch("../html/start.html")
