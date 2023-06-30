@@ -1,5 +1,5 @@
 /*
-    --primary-color: #ff5080;
+    --primary-color: #f6582c;;
     --secondary-color: #f3f3f3;
     --tertiary-color: #000;
     --black-color: #000;
@@ -110,12 +110,13 @@
     margin: 0 12px;
     color: var(--secondary-color);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: bold;
     transition: .5s;
 }
 
 #start .content header .content-header nav ul a:hover {
     color: var(--primary-color);
+    font-weight: bold;
 }
 
 #start .content header .content-header .networks a {

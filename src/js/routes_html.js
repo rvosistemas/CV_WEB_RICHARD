@@ -22,6 +22,7 @@ fetch("./src/html/services.html")
     })
     .then(data => {
         document.querySelector("#services").innerHTML = data;
+        renderServices();
     });
 // --- skills --- 
 fetch("./src/html/skills.html")

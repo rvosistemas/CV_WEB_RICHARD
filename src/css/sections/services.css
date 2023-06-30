@@ -1,5 +1,5 @@
 /*
-    --primary-color: #ff5080;
+    --primary-color: #f6582c;;
     --secondary-color: #f3f3f3;
     --tertiary-color: #000;
     --black-color: #000;
@@ -23,14 +23,14 @@
     text-decoration-thickness: 5px;
 }
 
-#services .row {
+#services-container .row {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
 }
 
-#services .row .service {
+#services-container .row .service {
     max-width: 350px;
     background-color: var(--tertiary-color);
     padding: 30px;
@@ -39,40 +39,46 @@
     transition: .5s;
 }
 
-#services .row .service:hover {
+#services-container .row .service:hover {
     box-shadow: 5px 5px 10px var(--dark-gray), -5px -5px 10px var(--gray);
 }
 
-#services .row .service h4 {
+#services-container .row .service h4 {
     font-size: 22px;
     margin-bottom: 25px;
+    color: var(--primary-color);
 }
 
-#services .row .service .icon {
+#services-container .row .service .icon {
     display: inline-block;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: var(--light-gray);
-    padding: 20px;
-    margin-bottom: 25px;
+    background-color: var(--gray);
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    align-self: center;
+    align-items: center;
 }
 
-#services .row .service hr {
+#services-container .row .service hr {
     width: 30%;
     margin: auto;
     color: var(--black-color);
     margin-bottom: 25px;
 }
 
-#services .row .service ul {
+#services-container .row .service ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
-#services .row .service p {
+#services-container .row .service p {
     font-size: 14px;
     line-height: 22px;
+    text-align: justify;
+    letter-spacing: -0.9px;
 }

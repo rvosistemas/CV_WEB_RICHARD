@@ -1,5 +1,5 @@
 /*
-    --primary-color: #ff5080;
+    --primary-color: #f6582c;;
     --secondary-color: #f3f3f3;
     --tertiary-color: #000;
     --black-color: #000;
@@ -103,7 +103,8 @@
         text-align: center;
     }
 
-    #about_me h2, h3 {
+    #about_me h2,
+    h3 {
         font-size: 25px;
         text-align: center;
     }
