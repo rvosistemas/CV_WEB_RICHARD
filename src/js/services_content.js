@@ -10,6 +10,10 @@ var serviceTemplate = `
     </div>
 `;
 
+window.addEventListener('resize', function () {
+    renderServices()
+});
+
 function renderServices() {
     var container = document.querySelector("#services-container");
     container.innerHTML = "";
@@ -22,7 +26,11 @@ function renderServices() {
         header: true,
         complete: function (results) {
             var jsonData = results.data;
-            var rowsData = chunkArray(jsonData, 3); // Dividir los servicios en grupos de 3
+            var rowsData = chunkArray(jsonData, 3);
+
+            if (screen.width > 768 && screen.width < 1024) {
+                rowsData = chunkArray(jsonData, 2);
+            }
 
             rowsData.forEach(function (rowServices) {
                 var row = createRow(container);
@@ -36,7 +44,6 @@ function renderServices() {
 }
 
 function chunkArray(arr, size) {
-    // Función para dividir un array en grupos de un tamaño específico
     var chunks = [];
     for (var i = 0; i < arr.length; i += size) {
         chunks.push(arr.slice(i, i + size));
@@ -45,7 +52,6 @@ function chunkArray(arr, size) {
 }
 
 function createRow(container) {
-    // Crea una nueva fila y la agrega al contenedor
     var row = document.createElement("div");
     row.classList.add("row");
     container.appendChild(row);
@@ -53,7 +59,6 @@ function createRow(container) {
 }
 
 function renderRowServices(row, services) {
-    // Renderiza los servicios en una fila específica
     services.forEach(function (service) {
         service.title = service.title.replace(";", "");
         service.icon = service.icon.replace(";", "");

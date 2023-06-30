@@ -31,6 +31,7 @@ fetch("./src/html/skills.html")
     })
     .then(data => {
         document.querySelector("#skills").innerHTML = data;
+        renderSkills();
     });
 // --- portfolio --- 
 fetch("./src/html/portfolio.html")

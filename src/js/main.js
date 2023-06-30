@@ -22,21 +22,6 @@ function responsiveMenu() {
     }
 }
 
-window.onscroll = function () {
-    skills_effect()
-}
-
-// function that applies skill bar animation
-function skills_effect() {
-    var skills = document.getElementById("skills");
-    var skills_distance = window.innerHeight - skills.getBoundingClientRect().top;
-    if (skills_distance >= 300) {
-        document.getElementById("html_css").classList.add("bar-progress_html_css");
-        document.getElementById("js").classList.add("bar-progress_js");
-        document.getElementById("python").classList.add("bar-progress_python");
-    }
-}
-
 // send message
 function send_message() {
     const form = document.querySelector('#form');

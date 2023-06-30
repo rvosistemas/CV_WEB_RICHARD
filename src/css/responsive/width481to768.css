@@ -126,26 +126,31 @@
         padding: 50px 15px;
     }
 
-    #services .row {
+    #services-container .row {
         display: block;
     }
 
-    #services .row .service {
+    #services-container .row .service {
         margin: 10px auto;
     }
 
     /* skills section */
 
-    .container-skills {
+    #skills {
         padding: 50px 20px;
     }
 
-    .container-skills h3 {
+    #skills h3 {
         padding: 20px;
     }
 
-    .container-skills .skills-cols {
-        display: contents;
+    #skills .row {
+        display: inline-table;
+        width: 50%;
+    }
+
+    #skills .row .skill {
+        width: 90%;
     }
 
     /* portfolio section */

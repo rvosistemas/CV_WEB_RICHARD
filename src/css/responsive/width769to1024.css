@@ -126,13 +126,12 @@
         padding: 50px 15px;
     }
 
-    #services .row {
-        display: flex;
-        justify-content: space-between;
+    #services-container .row {
+        display: inline-flex;
         margin: 5px 15px;
     }
 
-    #services .row .service {
+    #services-container .row .service {
         margin: 30px 5px;
     }
 

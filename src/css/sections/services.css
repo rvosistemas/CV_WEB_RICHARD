@@ -31,7 +31,7 @@
 }
 
 #services-container .row .service {
-    max-width: 350px;
+    max-width: 320px;
     background-color: var(--tertiary-color);
     padding: 30px;
     margin: 0 5px;
