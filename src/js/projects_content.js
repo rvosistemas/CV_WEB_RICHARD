@@ -44,7 +44,9 @@ async function renderProjects() {
         var jsonData = await loadData(projectDataCsv);
         renderRowProjects(container, jsonData);
     } catch (error) {
-        console.log("Error uploading or converting CSV file:", error);
+        lang = document.querySelector('html').lang;
+        message = lang === 'es' ? "Error al cargar los proyectos desde archivo CSV:" : "Error loading projects from CSV file:";
+        console.log(message, error);
     }
 }
 

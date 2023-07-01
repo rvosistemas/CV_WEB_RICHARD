@@ -9,6 +9,7 @@ const language = async (id, texts_to_change) => {
     }
 
     renderServices();
+    renderProjects();
 
     const texts = await request_json.json();
     for (const text_to_change of texts_to_change) {

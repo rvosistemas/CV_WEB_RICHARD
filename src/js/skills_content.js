@@ -29,7 +29,9 @@ function renderSkills() {
             });
         },
         error: function (error) {
-            console.log("Error al cargar o convertir el archivo CSV:", error);
+            lang = document.querySelector('html').lang;
+            message = lang === 'es' ? "Error al cargar las habilidades desde archivo CSV:" : "Error loading skills from CSV file:";
+            console.log(message, error);
         },
     });
 }

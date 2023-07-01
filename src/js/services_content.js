@@ -43,7 +43,9 @@ async function renderServices() {
         var jsonData = await loadData(serviceDataCsv);
         renderRowServices(container, jsonData);
     } catch (error) {
-        console.log("Error uploading or converting CSV file:", error);
+        lang = document.querySelector('html').lang;
+        message = lang === 'es' ? "Error al cargar los servicios desde archivo CSV:" : "Error loading services from CSV file:";
+        console.log(message, error);
     }
 }
 

@@ -21,32 +21,49 @@ function responsiveMenu() {
     }
 }
 
-// TODO: REVISAR Y QUITAR COMENTARIOS Y PONER LOS MENSAJES EN INGLES Y LUEGO TRADUCIRLOS
+
+function alertEmail(fields) {
+    if (!fields.fullName || !fields.email || !fields.topic || !fields.message) {
+        var lang = document.querySelector('html').lang;
+        var langMessages = {
+            es: {
+                error: "¡Algo salió mal!",
+                footer: "Por favor, rellene todos los campos obligatorios."
+            },
+            en: {
+                error: "Something went wrong!",
+                footer: "Please fill in all required fields."
+            }
+        };
+        var langText = langMessages[lang].error;
+        var langFooter = langMessages[lang].footer;
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: langText,
+            footer: `<div style="font-weight: bold; color: red">${langFooter}.</div>`
+        });
+        return true;
+    }
+}
 
 function sendEmail() {
     var recipient = "rvosistemas@outlook.com";
     var subject = "Formulario de contacto";
 
-    var fullName = document.getElementById("full_name").value;
-    var email = document.getElementById("email").value;
-    var topic = document.getElementById("topic").value;
-    var message = document.getElementById("message").value;
+    var fields = {
+        fullName: document.getElementById("full_name").value,
+        email: document.getElementById("email").value,
+        topic: document.getElementById("topic").value,
+        message: document.getElementById("message").value
+    };
 
-    // Validar los campos requeridos
-    if (!fullName || !email || !topic || !message) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-            footer: '<div style="font-weight: bold; color: red">Please fill in all required fields.</div>'
-        })
-        return;
-    }
+    if (alertEmail(fields)) return;
 
-    var body = "Name: " + fullName + "\n" +
-        "Email: " + email + "\n" +
-        "Topic: " + topic + "\n" +
-        "Message: " + message;
+    var body = Object.entries(fields).map(function (entry) {
+        return entry[0] + ": " + entry[1];
+    }).join("\n");
 
     var mailtoLink = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
