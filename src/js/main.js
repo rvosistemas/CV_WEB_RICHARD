@@ -12,7 +12,6 @@ function select(link) {
     x.className = "";
 }
 
-// function that shows responsive menu
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -22,16 +21,34 @@ function responsiveMenu() {
     }
 }
 
-// send message
-function send_message() {
-    const form = document.querySelector('#form');
-    form.addEventListener('submit', handleSubmit);
-}
+// TODO: REVISAR Y QUITAR COMENTARIOS Y PONER LOS MENSAJES EN INGLES Y LUEGO TRADUCIRLOS
 
-function handleSubmit(event) {
-    const buttonMailTo = document.querySelector('#rvo_email');
-    event.preventDefault();
-    const form = new FormData(this);
-    buttonMailTo.setAttribute('href', `mailto:rvosistemas@outlook.com?subject=nombre: ${form.get('full_name')} email: ${form.get('email')}&body=${form.get('message')}`);
-    buttonMailTo.click();
+function sendEmail() {
+    var recipient = "rvosistemas@outlook.com";
+    var subject = "Formulario de contacto";
+
+    var fullName = document.getElementById("full_name").value;
+    var email = document.getElementById("email").value;
+    var topic = document.getElementById("topic").value;
+    var message = document.getElementById("message").value;
+
+    // Validar los campos requeridos
+    if (!fullName || !email || !topic || !message) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<div style="font-weight: bold; color: red">Please fill in all required fields.</div>'
+        })
+        return;
+    }
+
+    var body = "Name: " + fullName + "\n" +
+        "Email: " + email + "\n" +
+        "Topic: " + topic + "\n" +
+        "Message: " + message;
+
+    var mailtoLink = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+    window.open(mailtoLink);
 }

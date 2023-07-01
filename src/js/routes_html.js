@@ -40,6 +40,7 @@ fetch("./src/html/portfolio.html")
     })
     .then(data => {
         document.querySelector("#portfolio").innerHTML = data;
+        renderProjects();
     });
 // --- contact --- 
 fetch("./src/html/contact.html")

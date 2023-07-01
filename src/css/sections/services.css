@@ -35,7 +35,7 @@
     background-color: var(--tertiary-color);
     padding: 30px;
     margin: 10px 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: .5s;
 }
 

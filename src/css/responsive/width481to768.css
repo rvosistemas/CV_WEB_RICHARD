@@ -145,17 +145,6 @@
 
     /* portfolio section */
 
-    #portfolio {
-        padding: 50px 0;
-    }
-
-    #portfolio .row {
-        display: block;
-    }
-
-    #portfolio .row .project {
-        margin: 10px auto;
-    }
 
     /* contact section */
 

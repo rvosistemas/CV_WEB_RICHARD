@@ -11,73 +11,52 @@ var projectTemplate = `
     </div>
 `;
 
-window.addEventListener('resize', function () {
-    renderProjects()
-});
-
-function renderProjects() {
-    var container = document.querySelector("#projects-container");
-    container.innerHTML = "";
-
-    var check = document.getElementById("check");
-    projectDataCsv = check.checked ? "/src/data/projects-es.csv" : "/src/data/projects-en.csv"
-
-    Papa.parse(projectDataCsv, {
-        download: true,
-        header: true,
-        complete: function (results) {
-            var jsonData = results.data;
-            var rowsData = chunkArray(jsonData, 3);
-
-            if (screen.width > 768 && screen.width < 1024) {
-                rowsData = chunkArray(jsonData, 2);
-            }
-
-            rowsData.forEach(function (rowProjects) {
-                var row = createRow(container);
-                renderRowProjects(row, rowProjects);
-            });
-        },
-        error: function (error) {
-            console.log("Error al cargar o convertir el archivo CSV:", error);
-        },
+function getValueCheck() {
+    return new Promise(resolve => {
+        var check = document.getElementById("check");
+        resolve(check.checked);
     });
 }
 
-function chunkArray(arr, size) {
-    var chunks = [];
-    for (var i = 0; i < arr.length; i += size) {
-        chunks.push(arr.slice(i, i + size));
+function loadData(url) {
+    return new Promise((resolve, reject) => {
+        Papa.parse(url, {
+            download: true,
+            header: true,
+            complete: function (results) {
+                var jsonData = results.data;
+                resolve(jsonData);
+            },
+            error: function (error) {
+                reject(error);
+            },
+        });
+    });
+}
+
+async function renderProjects() {
+    var container = document.querySelector("#projects-container");
+    container.innerHTML = "";
+
+    var checked = await getValueCheck();
+    projectDataCsv = checked ? "/src/data/projects-es.csv" : "/src/data/projects-en.csv"
+    try {
+        var jsonData = await loadData(projectDataCsv);
+        renderRowProjects(container, jsonData);
+    } catch (error) {
+        console.log("Error uploading or converting CSV file:", error);
     }
-    return chunks;
 }
 
-function createRow(container) {
-    var row = document.createElement("div");
-    row.classList.add("row");
-    container.appendChild(row);
-    return row;
-}
-
-function renderRowProjects(row, projects) {
+function renderRowProjects(container, projects) {
     projects.forEach(function (project) {
-        project.title = project.title.replace(";", "");
-        project.icon = project.icon.replace(";", "");
+        project.image_path = project.image_path.replace(";", "");
+        project.name = project.name.replace(";", "");
         var projectHTML = projectTemplate
-            .replace("{title}", project.title)
-            .replace("{icon}", project.icon)
-            .replace(
-                "{tags}",
-                project.tags
-                    .split(",")
-                    .map(function (tag) {
-                        tag = tag.replace(";", "");
-                        return "<li>" + tag + "</li>";
-                    })
-                    .join("")
-            )
+            .replace("{image_path}", project.image_path)
+            .replace("{name}", project.name)
             .replace("{description}", project.description);
 
-        row.insertAdjacentHTML("beforeend", projectHTML);
+        container.insertAdjacentHTML("beforeend", projectHTML);
     });
 }

@@ -14,7 +14,7 @@
 }
 
 #contact .title-section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -63,20 +63,27 @@
     width: 100%;
 }
 
-#contact .btn-send {
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-    border: 1px solid var(--gray);
-    font-size: 18px;
-    font-weight: bold;
+#contact .container-form .button_container {
+    display: flex;
+    justify-content: center;
 }
 
-#contact .btn-send:hover {
+#contact .container-form .button_container .btn-send {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    margin-top: 30px;
+    transition: .5s;
+    font-size: medium;
+}
+
+#contact .container-form .button_container .btn-send:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }

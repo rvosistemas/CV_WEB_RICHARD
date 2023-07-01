@@ -20,9 +20,13 @@
             </textarea>
         </div>
 
-        <button type='submit' class="btn-send" data-section="contact" data-value="bt" onclick="send_message()">
-            Send message
-        </button>
+        <div class="button_container">
+            <button type="button" class="btn-send" data-section="contact" data-value="bt" onclick="sendEmail()">
+                Send message
+            </button>
+        </div>
+
+        <div id="message" class="message hidden"></div>
+
     </form>
-    <a href="mailto:rvosistemas@outlook.com" id="rvo_email"></a>
 </div>

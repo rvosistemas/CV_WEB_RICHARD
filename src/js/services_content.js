@@ -10,14 +10,14 @@ var serviceTemplate = `
     </div>
 `;
 
-function obtenerValorCheck() {
+function getValueCheck() {
     return new Promise(resolve => {
         var check = document.getElementById("check");
         resolve(check.checked);
     });
 }
 
-function cargarDatos(url) {
+function loadData(url) {
     return new Promise((resolve, reject) => {
         Papa.parse(url, {
             download: true,
@@ -37,16 +37,13 @@ async function renderServices() {
     var container = document.querySelector("#services-container");
     container.innerHTML = "";
 
-    // var check = document.getElementById("check");
-    var checked = await obtenerValorCheck();
+    var checked = await getValueCheck();
     serviceDataCsv = checked ? "/src/data/services-es.csv" : "/src/data/services-en.csv"
     try {
-        var jsonData = await cargarDatos(serviceDataCsv);
-        console.log("jsonData: ", jsonData);
+        var jsonData = await loadData(serviceDataCsv);
         renderRowServices(container, jsonData);
-        // Resto del código que utiliza jsonData
     } catch (error) {
-        console.log("Error al cargar o convertir el archivo CSV:", error);
+        console.log("Error uploading or converting CSV file:", error);
     }
 }
 
