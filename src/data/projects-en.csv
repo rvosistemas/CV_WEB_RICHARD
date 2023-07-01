@@ -1,0 +1,8 @@
+image_path;name;description
+"./src/img/projects.jpg;";"C# - SVELTE;";Microsoft developer
+"./src/img/projects.jpg;";"DJANGO - REACT;";python developer
+"./src/img/projects.jpg;";"LARAVEL - VUE;";php developer
+"./src/img/projects.jpg;";"SPRING BOOT - ANGULAR;";java developer
+"./src/img/projects.jpg;";"NODEJS - REACT;";js developer
+"./src/img/projects.jpg;";"GIN - VUE;";go developer
+"./src/img/projects.jpg;";"RUBY - SVELTE;";ruby developer

@@ -10,55 +10,47 @@ var serviceTemplate = `
     </div>
 `;
 
-window.addEventListener('resize', function () {
-    renderServices()
-});
-
-function renderServices() {
-    var container = document.querySelector("#services-container");
-    container.innerHTML = "";
-
-    var check = document.getElementById("check");
-    serviceDataCsv = check.checked ? "/src/data/services-es.csv" : "/src/data/services-en.csv"
-
-    Papa.parse(serviceDataCsv, {
-        download: true,
-        header: true,
-        complete: function (results) {
-            var jsonData = results.data;
-            var rowsData = chunkArray(jsonData, 3);
-
-            if (screen.width > 768 && screen.width < 1024) {
-                rowsData = chunkArray(jsonData, 2);
-            }
-
-            rowsData.forEach(function (rowServices) {
-                var row = createRow(container);
-                renderRowServices(row, rowServices);
-            });
-        },
-        error: function (error) {
-            console.log("Error al cargar o convertir el archivo CSV:", error);
-        },
+function obtenerValorCheck() {
+    return new Promise(resolve => {
+        var check = document.getElementById("check");
+        resolve(check.checked);
     });
 }
 
-function chunkArray(arr, size) {
-    var chunks = [];
-    for (var i = 0; i < arr.length; i += size) {
-        chunks.push(arr.slice(i, i + size));
+function cargarDatos(url) {
+    return new Promise((resolve, reject) => {
+        Papa.parse(url, {
+            download: true,
+            header: true,
+            complete: function (results) {
+                var jsonData = results.data;
+                resolve(jsonData);
+            },
+            error: function (error) {
+                reject(error);
+            },
+        });
+    });
+}
+
+async function renderServices() {
+    var container = document.querySelector("#services-container");
+    container.innerHTML = "";
+
+    // var check = document.getElementById("check");
+    var checked = await obtenerValorCheck();
+    serviceDataCsv = checked ? "/src/data/services-es.csv" : "/src/data/services-en.csv"
+    try {
+        var jsonData = await cargarDatos(serviceDataCsv);
+        console.log("jsonData: ", jsonData);
+        renderRowServices(container, jsonData);
+        // Resto del código que utiliza jsonData
+    } catch (error) {
+        console.log("Error al cargar o convertir el archivo CSV:", error);
     }
-    return chunks;
 }
 
-function createRow(container) {
-    var row = document.createElement("div");
-    row.classList.add("row");
-    container.appendChild(row);
-    return row;
-}
-
-function renderRowServices(row, services) {
+function renderRowServices(container, services) {
     services.forEach(function (service) {
         service.title = service.title.replace(";", "");
         service.icon = service.icon.replace(";", "");
@@ -77,6 +69,6 @@ function renderRowServices(row, services) {
             )
             .replace("{description}", service.description);
 
-        row.insertAdjacentHTML("beforeend", serviceHTML);
+        container.insertAdjacentHTML("beforeend", serviceHTML);
     });
 }
