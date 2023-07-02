@@ -25,14 +25,14 @@ fetch("./src/html/services.html")
         renderServices();
     });
 // --- skills --- 
-fetch("./src/html/skills.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#skills").innerHTML = data;
-        renderSkills();
-    });
+// fetch("./src/html/skills.html")
+//     .then(response => {
+//         return response.text()
+//     })
+//     .then(data => {
+//         document.querySelector("#skills").innerHTML = data;
+//         renderSkills();
+//     });
 // --- portfolio --- 
 fetch("./src/html/portfolio.html")
     .then(response => {

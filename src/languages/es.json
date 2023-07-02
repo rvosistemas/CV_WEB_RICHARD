@@ -5,9 +5,9 @@
     "start": {
         "start": "INTRODUCCIÓN",
         "about_me": "SOBRE MÍ",
-        "services": "SERVICIOS",
+        "services": "HABILIDADES",
         "skills": "HABILIDADES",
-        "portfolio": "PORTAFOLIO",
+        "portfolio": "PROYECTOS",
         "contact": "CONTACTO",
         "welcome": "Bienvenidos",
         "sd": "Desarrollador de Software",
@@ -23,7 +23,7 @@
         "download": "Descargar CV"
     },
     "services": {
-        "title": "MIS SERVICIOS"
+        "title": "MIS HABILIDADES"
     },
     "skills": {
         "title": "HABILIDADES"

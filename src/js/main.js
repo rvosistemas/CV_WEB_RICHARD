@@ -1,5 +1,9 @@
 
+// TODO: minificar todo el proyecto o empaquetarlo
 // -------------------- MAIN FUNCTIONS --------------------
+
+// --------------MENU RESPONSIVE--------------------
+
 // function that applies the style to the selected option in the menu and removes the previously selected one
 function select(link) {
     var option = document.querySelectorAll("#links a");
@@ -20,6 +24,27 @@ function responsiveMenu() {
         x.className = "";
     }
 }
+
+// --------------DOWNLOAD CV--------------------
+
+
+function downloadPDF() {
+    var lang = document.querySelector('html').lang;
+
+    var pathPDF = lang === "es" ? "/src/data/CV-ES.pdf" : "/src/data/CV-EN.pdf"
+
+    var link = document.createElement("a");
+    link.href = pathPDF;
+    link.setAttribute("download", "");
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
+
+// --------------SEND EMAIL--------------------
 
 
 function alertEmail(fields) {

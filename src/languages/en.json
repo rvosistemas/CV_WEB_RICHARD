@@ -5,9 +5,9 @@
     "start": {
         "start": "INTRODUCTION",
         "about_me": "ABOUT ME",
-        "services": "SERVICES",
+        "services": "SKILLS",
         "skills": "SKILLS",
-        "portfolio": "PORTFOLIO",
+        "portfolio": "PROJECTS",
         "contact": "CONTACT",
         "welcome": "Welcome",
         "sd": "Software Developer",
@@ -23,7 +23,7 @@
         "download": "Download CV"
     },
     "services": {
-        "title": "MY SERVICES"
+        "title": "MY SKILLS"
     },
     "skills": {
         "title": "SKILLS"
