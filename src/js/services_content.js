@@ -38,7 +38,9 @@ async function renderServices() {
     container.innerHTML = "";
 
     var checked = await getValueCheck();
-    serviceDataCsv = checked ? "/src/data/services-es.csv" : "/src/data/services-en.csv"
+    var servicesEng = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/services-en.csv"
+    var servicesEsp = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/services-es.csv"
+    serviceDataCsv = checked ? servicesEsp : servicesEng
     try {
         var jsonData = await loadData(serviceDataCsv);
         renderRowServices(container, jsonData);

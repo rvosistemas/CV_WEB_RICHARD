@@ -69,8 +69,8 @@
 }
 
 #contact .container-form .button_container .btn-send {
+    position: relative;
     cursor: pointer;
-    display: inline-block;
     width: auto;
     text-decoration: none;
     background-color: transparent;

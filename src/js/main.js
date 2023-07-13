@@ -30,8 +30,10 @@ function responsiveMenu() {
 
 function downloadPDF() {
     var lang = document.querySelector('html').lang;
+    var pdfEng = "https://github.com/rvosistemas/CV_WEB_RICHARD/blob/main/src/data/CV-EN.pdf"
+    var pdfEsp = "https://github.com/rvosistemas/CV_WEB_RICHARD/blob/main/src/data/CV-ES.pdf"
 
-    var pathPDF = lang === "es" ? "/src/data/CV-ES.pdf" : "/src/data/CV-EN.pdf"
+    var pathPDF = lang === "es" ? pdfEsp : pdfEng
 
     var link = document.createElement("a");
     link.href = pathPDF;
