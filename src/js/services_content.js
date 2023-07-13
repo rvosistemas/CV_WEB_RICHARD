@@ -17,19 +17,21 @@ function getValueCheck() {
     });
 }
 
-function loadData(url) {
+function loadCSVData(url) {
     return new Promise((resolve, reject) => {
-        Papa.parse(url, {
-            download: true,
-            header: true,
-            complete: function (results) {
-                var jsonData = results.data;
-                resolve(jsonData);
-            },
-            error: function (error) {
-                reject(error);
-            },
-        });
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    resolve(xhr.responseText);
+                } else {
+                    reject(new Error("Error al cargar el archivo CSV."));
+                }
+            }
+        };
+
+        xhr.open("GET", url, true);
+        xhr.send();
     });
 }
 
@@ -38,11 +40,16 @@ async function renderServices() {
     container.innerHTML = "";
 
     var checked = await getValueCheck();
-    var servicesEng = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/services-en.csv"
-    var servicesEsp = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/services-es.csv"
-    serviceDataCsv = checked ? servicesEsp : servicesEng
+    var servicesEng = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/services-en.csv";
+    var servicesEsp = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/services-es.csv";
+    var serviceDataCsv = checked ? servicesEsp : servicesEng;
+
     try {
-        var jsonData = await loadData(serviceDataCsv);
+        var csvData = await loadCSVData(serviceDataCsv);
+        var jsonData = Papa.parse(csvData, {
+            header: true,
+            dynamicTyping: true,
+        }).data;
         renderRowServices(container, jsonData);
     } catch (error) {
         lang = document.querySelector('html').lang;

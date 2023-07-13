@@ -1,9 +1,9 @@
 image_path;name;tags;repository_link;description
-"/src/img/projects/DRF_JWT.jpg";"API DJANGO RESTFRAMEWORK;";PYTHON,DJANGO,API,REST,POSTGRESQL,DOCKER,UNITTEST,JWT,OPENAPI,SWAGGER;https://github.com/rvosistemas/django_rest.git;Rest API creada con Django con conexión a postgresql y montada con Docker, para una fácil gestión de usuarios (CRUD) con inicio de sesión, registro, cierre de sesión y documentada con OpenApi.
-"/src/img/projects.jpg";"API REST REACT;";JS,REACT,API,REST,UNITTEST;https://github.com/rvosistemas/;python developer
-"/src/img/projects.jpg";"LARAVEL - VUE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;php developer
-"/src/img/projects.jpg";"SPRING BOOT - ANGULAR;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;java developer
-"/src/img/projects.jpg";"NODEJS - REACT;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;js developer
-"/src/img/projects.jpg";"C# - SVELTE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;Microsoft developer
-"/src/img/projects.jpg";"GIN - VUE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;go developer
-"/src/img/projects.jpg";"RUBY - SVELTE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;ruby developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects/DRF_JWT.jpg";"API DJANGO RESTFRAMEWORK;";PYTHON,DJANGO,API,REST,POSTGRESQL,DOCKER,UNITTEST,JWT,OPENAPI,SWAGGER;https://github.com/rvosistemas/django_rest.git;Rest API creada con Django con conexión a postgresql y montada con Docker, para una fácil gestión de usuarios (CRUD) con inicio de sesión, registro, cierre de sesión y documentada con OpenApi.
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"API REST REACT;";JS,REACT,API,REST,UNITTEST;https://github.com/rvosistemas/;python developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"LARAVEL - VUE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;php developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"SPRING BOOT - ANGULAR;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;java developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"NODEJS - REACT;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;js developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"C# - SVELTE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;Microsoft developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"GIN - VUE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;go developer
+"https://github.com/rvosistemas/CV_WEB_RICHARD/blob/38c0dc1092ae6194c901e600c6a23e0ade2b1e14/src/img/projects.jpg";"RUBY - SVELTE;";PYTHON,DJANGO,API,REST,POSTGRESQL,UNITTEST;https://github.com/rvosistemas/;ruby developer

@@ -20,19 +20,21 @@ function getValueCheck() {
     });
 }
 
-function loadData(url) {
+function loadCSVData(url) {
     return new Promise((resolve, reject) => {
-        Papa.parse(url, {
-            download: true,
-            header: true,
-            complete: function (results) {
-                var jsonData = results.data;
-                resolve(jsonData);
-            },
-            error: function (error) {
-                reject(error);
-            },
-        });
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    resolve(xhr.responseText);
+                } else {
+                    reject(new Error("Error al cargar el archivo CSV."));
+                }
+            }
+        };
+
+        xhr.open("GET", url, true);
+        xhr.send();
     });
 }
 
@@ -41,11 +43,16 @@ async function renderProjects() {
     container.innerHTML = "";
 
     var checked = await getValueCheck();
-    let englishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-en.csv"
-    let spanishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-es.csv"
-    projectDataCsv = checked ? spanishPath : englishPath;
+    var englishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-en.csv";
+    var spanishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-es.csv";
+    var projectDataCsv = checked ? spanishPath : englishPath;
+
     try {
-        var jsonData = await loadData(projectDataCsv);
+        var csvData = await loadCSVData(projectDataCsv);
+        var jsonData = Papa.parse(csvData, {
+            header: true,
+            dynamicTyping: true,
+        }).data;
         renderRowProjects(container, jsonData);
     } catch (error) {
         lang = document.querySelector('html').lang;
@@ -118,12 +125,10 @@ function getTagClass(tag) {
     return "other-tag";
 }
 
-
 function removeHighlight() {
     var divs = document.getElementsByClassName("project");
 
     for (var i = 0; i < divs.length; i++) {
         divs[i].classList.remove("highlight");
     }
-
 }
