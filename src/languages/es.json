@@ -2,19 +2,19 @@
     "index": {
         "title": "RVO Desarrollador Software"
     },
-    "start":{
+    "start": {
         "start": "INTRODUCCIÓN",
         "about_me": "SOBRE MÍ",
-        "services": "SERVICIOS",
+        "services": "HABILIDADES",
         "skills": "HABILIDADES",
-        "portfolio": "PORTAFOLIO",
+        "portfolio": "PROYECTOS",
         "contact": "CONTACTO",
         "welcome": "Bienvenidos",
         "sd": "Desarrollador de Software",
         "hope": "Espero que esta página sea de tu agrado y puedas conocer más sobre mí y mi trabajo.",
         "goto": "Ir al portafolio"
     },
-    "about_me":{
+    "about_me": {
         "about_me": "Sobre mí",
         "hi": "Hola, mi nombre es:",
         "sd": "Desarrollador de software",
@@ -22,16 +22,16 @@
         "quote": "Bien hecho es mejor que bien dicho. ",
         "download": "Descargar CV"
     },
-    "services":{
-        "title": "MIS SERVICIOS"
+    "services": {
+        "title": "MIS HABILIDADES"
     },
-    "skills":{
+    "skills": {
         "title": "HABILIDADES"
     },
-    "portfolio":{
+    "portfolio": {
         "title": "MIS PROYECTOS"
     },
-    "contact":{
+    "contact": {
         "title": "Contáctame",
         "full_name": "Nombre:",
         "email": "Correo:",
@@ -39,7 +39,7 @@
         "message": "Mensaje:",
         "bt": "Enviar mensaje"
     },
-    "footer":{
-        "title": "Todos los derechos reservados - 2022"
-    }   
+    "footer": {
+        "title": "Todos los derechos reservados - 2023"
+    }
 }

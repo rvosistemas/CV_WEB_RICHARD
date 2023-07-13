@@ -1,5 +1,9 @@
 
+// TODO: minificar todo el proyecto o empaquetarlo
 // -------------------- MAIN FUNCTIONS --------------------
+
+// --------------MENU RESPONSIVE--------------------
+
 // function that applies the style to the selected option in the menu and removes the previously selected one
 function select(link) {
     var option = document.querySelectorAll("#links a");
@@ -12,7 +16,6 @@ function select(link) {
     x.className = "";
 }
 
-// function that shows responsive menu
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -22,31 +25,72 @@ function responsiveMenu() {
     }
 }
 
-window.onscroll = function () {
-    skills_effect()
+// --------------DOWNLOAD CV--------------------
+
+
+function downloadPDF() {
+    var lang = document.querySelector('html').lang;
+
+    var pathPDF = lang === "es" ? "/src/data/CV-ES.pdf" : "/src/data/CV-EN.pdf"
+
+    var link = document.createElement("a");
+    link.href = pathPDF;
+    link.setAttribute("download", "");
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
-// function that applies skill bar animation
-function skills_effect() {
-    var skills = document.getElementById("skills");
-    var skills_distance = window.innerHeight - skills.getBoundingClientRect().top;
-    if (skills_distance >= 300) {
-        document.getElementById("html_css").classList.add("bar-progress_html_css");
-        document.getElementById("js").classList.add("bar-progress_js");
-        document.getElementById("python").classList.add("bar-progress_python");
+
+
+// --------------SEND EMAIL--------------------
+
+
+function alertEmail(fields) {
+    if (!fields.fullName || !fields.email || !fields.topic || !fields.message) {
+        var lang = document.querySelector('html').lang;
+        var langMessages = {
+            es: {
+                error: "¡Algo salió mal!",
+                footer: "Por favor, rellene todos los campos obligatorios."
+            },
+            en: {
+                error: "Something went wrong!",
+                footer: "Please fill in all required fields."
+            }
+        };
+        var langText = langMessages[lang].error;
+        var langFooter = langMessages[lang].footer;
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: langText,
+            footer: `<div style="font-weight: bold; color: red">${langFooter}.</div>`
+        });
+        return true;
     }
 }
 
-// send message
-function send_message() {
-    const form = document.querySelector('#form');
-    form.addEventListener('submit', handleSubmit);
-}
+function sendEmail() {
+    var recipient = "rvosistemas@outlook.com";
+    var subject = "Formulario de contacto";
 
-function handleSubmit(event) {
-    const buttonMailTo = document.querySelector('#rvo_email');
-    event.preventDefault();
-    const form = new FormData(this);
-    buttonMailTo.setAttribute('href', `mailto:rvosistemas@outlook.com?subject=nombre: ${form.get('full_name')} email: ${form.get('email')}&body=${form.get('message')}`);
-    buttonMailTo.click();
+    var fields = {
+        fullName: document.getElementById("full_name").value,
+        email: document.getElementById("email").value,
+        topic: document.getElementById("topic").value,
+        message: document.getElementById("message").value
+    };
+
+    if (alertEmail(fields)) return;
+
+    var body = Object.entries(fields).map(function (entry) {
+        return entry[0] + ": " + entry[1];
+    }).join("\n");
+
+    var mailtoLink = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+    window.open(mailtoLink);
 }

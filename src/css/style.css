@@ -13,7 +13,7 @@
 @import './responsive/width769to1024.css';
 
 :root {
-    --primary-color: #ff5080;
+    --primary-color: #f6582c;
     --secondary-color: #f3f3f3;
     --tertiary-color: #000;
     --black-color: #000;
@@ -21,9 +21,6 @@
     --light-gray: #d3d3d3;
     --gray: #919191;
     --dark-gray: #565656;
-    --percentage_html_css: 95%;
-    --percentage_js: 65%;
-    --percentage_python: 80%;
 }
 
 * {

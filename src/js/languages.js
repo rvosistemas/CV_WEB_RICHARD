@@ -7,6 +7,10 @@ const language = async (id, texts_to_change) => {
         request_json = await fetch('./src/languages/es.json');
         document.querySelector('html').setAttribute('lang', 'es');
     }
+
+    renderServices();
+    renderProjects();
+
     const texts = await request_json.json();
     for (const text_to_change of texts_to_change) {
         const section = text_to_change.dataset.section;

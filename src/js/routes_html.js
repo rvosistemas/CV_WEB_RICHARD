@@ -22,15 +22,17 @@ fetch("./src/html/services.html")
     })
     .then(data => {
         document.querySelector("#services").innerHTML = data;
+        renderServices();
     });
 // --- skills --- 
-fetch("./src/html/skills.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("#skills").innerHTML = data;
-    });
+// fetch("./src/html/skills.html")
+//     .then(response => {
+//         return response.text()
+//     })
+//     .then(data => {
+//         document.querySelector("#skills").innerHTML = data;
+//         renderSkills();
+//     });
 // --- portfolio --- 
 fetch("./src/html/portfolio.html")
     .then(response => {
@@ -38,6 +40,7 @@ fetch("./src/html/portfolio.html")
     })
     .then(data => {
         document.querySelector("#portfolio").innerHTML = data;
+        renderProjects();
     });
 // --- contact --- 
 fetch("./src/html/contact.html")

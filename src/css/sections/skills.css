@@ -1,5 +1,5 @@
 /*
-    --primary-color: #ff5080;
+    --primary-color: #f6582c;;
     --secondary-color: #f3f3f3;
     --tertiary-color: #000;
     --black-color: #000;
@@ -9,7 +9,7 @@
     --dark-gray: #565656;
 */
 
-.container-skills {
+#skills {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,36 +19,36 @@
     color: var(--secondary-color);
 }
 
-.container-skills h3 {
+#skills h3 {
     margin-bottom: 10px;
     text-decoration: underline;
     text-decoration-color: var(--secondary-color);
     text-decoration-thickness: 5px;
 }
 
-.container-skills .skills-cols {
+.skills-container .row {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 2px auto;
 }
 
-.container-skills .skill {
-    max-width: 600px;
+.skills-container .row .skill {
+    width: 25%;
     margin: 10px auto;
 }
 
-.container-skills .skill .info {
+.skills-container .row .skill .info {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
 
-.container-skills .skill .info p {
+.skills-container .row .skill .info p {
     margin-right: 10px;
 }
 
-.container-skills .skill .list {
+.skills-container .row .skill .list {
     display: inline-block;
     margin-right: 20px;
     height: 10px;
@@ -56,63 +56,171 @@
     background-color: var(--secondary-color);
 }
 
-#skills .skill .bar {
+.skills-container .row .skill .bar {
     background-color: var(--secondary-color);
     width: 100%;
     height: 6px;
     margin: 10px 0;
 }
 
-#skills .skill .bar .bar-progress_html_css {
+.skills-container .row .skill .bar .twenty_percent {
     background-color: var(--primary-color);
-    width: var(--percentage_html_css);
+    width: 20%;
     height: 6px;
-    animation: progress_html_css 10s forwards;
+    animation: twenty_percent 10s forwards;
     animation-iteration-count: infinite;
 }
 
-#skills .skill .bar .bar-progress_js {
+.skills-container .row .skill .bar .thirty_percent {
     background-color: var(--primary-color);
-    width: var(--percentage_js);
+    width: 30%;
     height: 6px;
-    animation: progress_js 10s forwards;
+    animation: thirty_percent 10s forwards;
     animation-iteration-count: infinite;
 }
 
-#skills .skill .bar .bar-progress_python {
+.skills-container .row .skill .bar .forty_percent {
     background-color: var(--primary-color);
-    width: var(--percentage_python);
+    width: 40%;
     height: 6px;
-    animation: progress_python 10s forwards;
+    animation: forty_percent 10s forwards;
     animation-iteration-count: infinite;
 }
 
-@keyframes progress_html_css {
+.skills-container .row .skill .bar .fifty_percent {
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 6px;
+    animation: fifty_percent 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-container .row .skill .bar .sixty_percent {
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 6px;
+    animation: sixty_percent 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-container .row .skill .bar .seventy_percent {
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 6px;
+    animation: seventy_percent 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-container .row .skill .bar .eighty_percent {
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 6px;
+    animation: eighty_percent 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-container .row .skill .bar .ninety_percent {
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 6px;
+    animation: ninety_percent 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-container .row .skill .bar .hundred_percent {
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 6px;
+    animation: hundred_percent 10s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twenty_percent {
     0% {
         width: 0;
     }
 
     100% {
-        width: var(--percentage_html_css);
+        width: 20%;
     }
 }
 
-@keyframes progress_js {
+@keyframes thirty_percent {
     0% {
         width: 0;
     }
 
     100% {
-        width: var(--percentage_js);
+        width: 30%;
     }
 }
 
-@keyframes progress_python {
+@keyframes forty_percent {
     0% {
         width: 0;
     }
 
     100% {
-        width: var(--percentage_python);
+        width: 40%;
+    }
+}
+
+@keyframes fifty_percent {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes sixty_percent {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes seventy_percent {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes eighty_percent {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes ninety_percent {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes hundred_percent {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
     }
 }

@@ -2,19 +2,19 @@
     "index": {
         "title": "RVO Software Development"
     },
-    "start":{
+    "start": {
         "start": "INTRODUCTION",
         "about_me": "ABOUT ME",
-        "services": "SERVICES",
+        "services": "SKILLS",
         "skills": "SKILLS",
-        "portfolio": "PORTFOLIO",
+        "portfolio": "PROJECTS",
         "contact": "CONTACT",
         "welcome": "Welcome",
         "sd": "Software Developer",
         "hope": "I hope this page is to your liking and you can learn more about me and my work.",
         "goto": "Go to portfolio"
     },
-    "about_me":{
+    "about_me": {
         "about_me": "About me",
         "hi": "Hi, my name is:",
         "sd": "I am a Software Developer",
@@ -22,16 +22,16 @@
         "quote": "Well done is better than well said. ",
         "download": "Download CV"
     },
-    "services":{
-        "title": "MY SERVICES"
+    "services": {
+        "title": "MY SKILLS"
     },
-    "skills":{
+    "skills": {
         "title": "SKILLS"
     },
-    "portfolio":{
+    "portfolio": {
         "title": "MY PROJECTS"
     },
-    "contact":{
+    "contact": {
         "title": "Contact me",
         "full_name": "Name:",
         "email": "Email:",
@@ -39,7 +39,7 @@
         "message": "Message:",
         "bt": "Send message"
     },
-    "footer":{
-        "title": "All rights reserved - 2022"
-    }   
+    "footer": {
+        "title": "All rights reserved - 2023"
+    }
 }

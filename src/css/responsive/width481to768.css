@@ -1,5 +1,5 @@
 /*
-    --primary-color: #ff5080;
+    --primary-color: #f6582c;;
     --secondary-color: #f3f3f3;
     --tertiary-color: #000;
     --black-color: #000;
@@ -103,7 +103,8 @@
         text-align: center;
     }
 
-    #about_me h2, h3 {
+    #about_me h2,
+    h3 {
         font-size: 25px;
         text-align: center;
     }
@@ -121,45 +122,29 @@
 
     /* services section */
 
-    #services {
-        padding: 50px 15px;
-    }
 
-    #services .row {
-        display: block;
-    }
-
-    #services .row .service {
-        margin: 10px auto;
-    }
 
     /* skills section */
 
-    .container-skills {
+    #skills {
         padding: 50px 20px;
     }
 
-    .container-skills h3 {
+    #skills h3 {
         padding: 20px;
     }
 
-    .container-skills .skills-cols {
-        display: contents;
+    #skills .row {
+        display: inline-table;
+        width: 50%;
+    }
+
+    #skills .row .skill {
+        width: 90%;
     }
 
     /* portfolio section */
 
-    #portfolio {
-        padding: 50px 0;
-    }
-
-    #portfolio .row {
-        display: block;
-    }
-
-    #portfolio .row .project {
-        margin: 10px auto;
-    }
 
     /* contact section */
 
