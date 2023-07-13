@@ -41,8 +41,8 @@ async function renderProjects() {
     container.innerHTML = "";
 
     var checked = await getValueCheck();
-    let spanishPath = "/src/data/projects-es.csv";
-    let englishPath = "/src/data/projects-en.csv";
+    let englishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-en.csv"
+    let spanishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-es.csv"
     projectDataCsv = checked ? spanishPath : englishPath;
     try {
         var jsonData = await loadData(projectDataCsv);
