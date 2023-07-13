@@ -45,6 +45,11 @@ async function renderProjects() {
     var checked = await getValueCheck();
     var englishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-en.csv";
     var spanishPath = "https://raw.githubusercontent.com/rvosistemas/CV_WEB_RICHARD/main/src/data/projects-es.csv";
+
+    // funciona para probar en local luego toca comentar antes de subir a github
+    // var englishPath = "src/data/projects-en.csv";
+    // var spanishPath = "src/data/projects-es.csv";
+
     var projectDataCsv = checked ? spanishPath : englishPath;
 
     try {
@@ -65,7 +70,6 @@ async function renderProjects() {
 
 function renderRowProjects(container, projects) {
     projects.forEach(function (project) {
-        project.image_path = project.image_path.replace(";", "");
         project.name = project.name.replace(";", "");
 
         var tagsHTML = project.tags.split(',').map(tag => {
@@ -73,8 +77,10 @@ function renderRowProjects(container, projects) {
             return `<li class="${tagClass}">${tag}</li>`;
         }).join('');
 
+        var image_path = ["/src/img/projects/DRF_JWT.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg",]
+
         var projectHTML = projectTemplate
-            .replace("{image_path}", project.image_path)
+            .replace("{image_path}", image_path[project.id])
             .replace("{name}", project.name)
             .replace("{tags}", tagsHTML)
             .replace("{repository_link}", project.repository_link)
