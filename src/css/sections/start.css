@@ -147,7 +147,7 @@
 }
 
 #start .content .presentation .welcome {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -179,7 +179,7 @@
 }
 
 #start .content .presentation h2 {
-    font-size: 25px;
+    font-size: 40px;
 }
 
 #start .content .presentation .description {

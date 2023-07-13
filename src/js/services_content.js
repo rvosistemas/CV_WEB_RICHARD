@@ -10,31 +10,6 @@ var serviceTemplate = `
     </div>
 `;
 
-function getValueCheck() {
-    return new Promise(resolve => {
-        var check = document.getElementById("check");
-        resolve(check.checked);
-    });
-}
-
-function loadCSVData(url) {
-    return new Promise((resolve, reject) => {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    resolve(xhr.responseText);
-                } else {
-                    reject(new Error("Error al cargar el archivo CSV."));
-                }
-            }
-        };
-
-        xhr.open("GET", url, true);
-        xhr.send();
-    });
-}
-
 async function renderServices() {
     var container = document.querySelector("#services-container");
     container.innerHTML = "";

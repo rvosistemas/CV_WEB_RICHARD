@@ -4,7 +4,7 @@
     },
     "start": {
         "start": "INTRODUCCIÓN",
-        "about_me": "SOBRE MÍ",
+        "about_me": "EXPERIENCIA",
         "services": "HABILIDADES",
         "skills": "HABILIDADES",
         "portfolio": "PROYECTOS",
@@ -15,10 +15,10 @@
         "goto": "Ir al portafolio"
     },
     "about_me": {
-        "about_me": "Sobre mí",
+        "about_me": "Experiencia",
         "hi": "Hola, mi nombre es:",
         "sd": "Desarrollador de software",
-        "description": "Llevo más de 3 años trabajando en el mundo del desarrollo web como backend, mayoritariamente en python, aunque tengo conocimientos en java, php y javascript (también comenzando en el mundo fronted). He trabajado con startups como Knowark, LQN, Mensajeros Urbanos, creando soluciones y dando soporte a sus productos y servicios tecnológicos. Por ello pongo a disposición mis conocimientos, habilidades, disciplina y mis ganas de seguir aprendiendo para lograr juntos grandes metas.",
+        "description": "Tengo más de 3 años de experiencia en el ámbito del desarrollo web con conocimientos sólidos en Python, Java, PHP y JavaScript tanto en el Frontend como Backend. Mi trayectoria profesional incluye colaboraciones con diversas startups reconocidas como Knowark, Prointel, LQN y Mensajeros Urbanos, donde he desplegado soluciones innovadoras y brindado soporte integral a sus productos y servicios tecnológicos.<br><br> Me gusta usar mis habilidades, conocimientos y disciplina para enfrentar nuevos desafíos y alcanzar metas ambiciosas de manera conjunta. Mi enfoque se basa en un enfoque orientado a resultados, siempre buscando la excelencia en cada proyecto. Además, me considero una persona autodidacta, lo que me impulsa a mantenerme actualizado en las últimas tendencias y tecnologías del campo del desarrollo de software.<br><br> Con mi experiencia y mi pasión por la programación me permiten aportar un valor significativo a cualquier equipo. Siempre busco superar las expectativas y construir soluciones eficientes y escalables. A través de mi dedicación y compromiso, estoy preparado para enfrentar desafíos técnicos y trabajar en colaboración para lograr resultados sobresalientes.",
         "quote": "Bien hecho es mejor que bien dicho. ",
         "download": "Descargar CV"
     },
