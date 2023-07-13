@@ -69,21 +69,38 @@
 }
 
 #contact .container-form .button_container .btn-send {
-    position: relative;
     cursor: pointer;
     display: inline-block;
     width: auto;
     text-decoration: none;
+    background-color: transparent;
     color: var(--secondary-color);
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px;
     border: 1px solid var(--secondary-color);
     margin-top: 30px;
     transition: .5s;
     font-size: medium;
+    animation: escalation 2s infinite;
 }
 
 #contact .container-form .button_container .btn-send:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    animation-play-state: paused;
+}
+
+@keyframes escalation {
+    0% {
+        transform: scale(1);
+        background-color: transparent;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: var(--primary-color);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: transparent;
+    }
 }

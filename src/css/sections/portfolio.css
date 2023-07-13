@@ -10,9 +10,6 @@
 */
 
 #portfolio {
-    /* max-width: 1100px;
-    padding: 100px 0;
-    margin: auto; */
     padding: 100px 15px;
     text-align: center;
 }
@@ -35,22 +32,43 @@
 }
 
 #projects-container .project {
-    max-width: 320px;
+    width: 320px;
+    height: 320px;
     border: 1px solid var(--secondary-color);
     margin: 10px 5px;
     position: relative;
     overflow: hidden;
 }
 
-#projects-container .project img {
-    width: 100;
-    height: 100;
-    filter: grayscale(1);
-    object-fit: cover;
-    transition: .5s;
+#projects-container .highlight {
+    animation: pulse 1s infinite;
 }
 
-#projects-container .project:hover img {
+@keyframes pulse {
+    0% {
+        transform: scale(0.99);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.99);
+    }
+}
+
+#projects-container .project .img-container {
+    width: 100%;
+    height: 0;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70%;
+    transition: filter 0.5s;
+    filter: grayscale(1);
+}
+
+#projects-container .project:hover .img-container {
     filter: grayscale(0);
 }
 
@@ -69,4 +87,88 @@
 #projects-container .project:hover .info {
     opacity: 1;
     bottom: 0;
+}
+
+#projects-container .project .info p {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#projects-container .project .info .tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+#projects-container .project .info .tags li {
+    display: inline-block;
+    margin: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    line-height: 1.4;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+#projects-container .project .info a {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+/* --------------------- TAGS --------------------- */
+
+.python-tag {
+    background-color: #29A071;
+}
+
+.css-tag {
+    background-color: #146CAD;
+}
+
+.html-tag {
+    background-color: #F25320;
+}
+
+.javascript-tag {
+    background-color: #F2D53A;
+}
+
+.jsframeworks-tag {
+    background-color: #CEB32B;
+}
+
+.api-tag {
+    background-color: #05F2EE;
+}
+
+.testing-tag {
+    background-color: #00F1AC;
+}
+
+.sql-tag {
+    background-color: #D16E30;
+}
+
+.nosql-tag {
+    background-color: #4BA13E;
+}
+
+.devops-tag {
+    background-color: #565DC4;
+}
+
+.security-tag {
+    background-color: #C4C45D;
+}
+
+.docs-tag {
+    background-color: #C45D5D;
 }
