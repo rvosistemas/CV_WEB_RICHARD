@@ -77,7 +77,7 @@ function renderRowProjects(container, projects) {
             return `<li class="${tagClass}">${tag}</li>`;
         }).join('');
 
-        var image_path = ["/src/img/projects/DRF_JWT.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg", "/src/img/projects.jpg",]
+        var image_path = ["./src/img/projects/DRF_JWT.jpg", "./src/img/projects.jpg", "./src/img/projects.jpg", "./src/img/projects.jpg", "./src/img/projects.jpg", "./src/img/projects.jpg", "./src/img/projects.jpg", "./src/img/projects.jpg",]
 
         var projectHTML = projectTemplate
             .replace("{image_path}", image_path[project.id])
